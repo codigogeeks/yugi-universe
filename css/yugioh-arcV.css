@@ -63,4 +63,8 @@ header{
 
 #menu li:hover {
     text-decoration: underline #F0DA87;
+    --webkit-text-decoration-line:  underline !important;
+    --webkit-text-decoration-color: #f0da87 !important;
+    --webkit-text-decoration-style: solid !important;
+    --webkit-text-decoration-thickness: 2px !important;
 }
