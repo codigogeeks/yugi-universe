@@ -1,6 +1,3 @@
-/* CSS Reset */
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-}
+/* Fonte do site */
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Open+Sans:wght@300&display=swap');
+
