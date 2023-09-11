@@ -59,8 +59,24 @@ header{
     text-decoration: none;
     color: var(--clr-font);
     font-size: 32px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
 }
 
 #menu li:hover {
-    text-decoration: underline #F0DA87;
+    border-bottom: 3px solid #BF3124;
+    transition: all 0.5s;
+}
+
+.tela-principal {
+    max-width: 80%;
+    height: 542px;
+    background-image: url(../img/background/background-arcV.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#personagem img{
+    
 }
