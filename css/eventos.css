@@ -3,6 +3,8 @@
 }
 
 :root{
-    --clr-primary : #1B1C47;
-    
+    --clr-bg : #1B1C47;
+    --clr-header: #090909;
+    --clr-elements: #3b488f;
+    --clr-font: #fff;
 }
