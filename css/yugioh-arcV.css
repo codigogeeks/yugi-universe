@@ -13,10 +13,8 @@
 }
 
 body {
-  
-    height: 100vh;
     background-color: var(--clr-bg);
-    font-family: 'Dhurjati';
+    font-family: 'Dhurjati', 'Verdana', sans-serif;
 }
 
 header{
