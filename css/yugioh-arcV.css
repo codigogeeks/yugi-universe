@@ -47,7 +47,6 @@ header{
 #logo img{
     width: 100%;
     height: 91px;
-    background-color: aliceblue;
 }
 
 #menu {
@@ -58,10 +57,12 @@ header{
     flex-grow: 1;
 }
 
-
 #menu li, a{
     text-decoration: none;
     color: var(--clr-font);
     font-size: 32px;
 }
 
+#menu li:hover {
+    text-decoration: underline #F0DA87;
+}
