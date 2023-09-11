@@ -1,3 +1,8 @@
+
+/* Fonte do site */
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Open+Sans:wght@300&display=swap');
+
+
 *,*::after,*::before{
     box-sizing: border-box;
 }
@@ -9,3 +14,8 @@
     --clr-font: #fff;
 }
 
+
+a{
+    color: var(--clr-header);
+    text-decoration: none;
+}
