@@ -269,3 +269,9 @@ body{
             transform: translateX(20%);
         }
 
+
+
+a{
+    color: var(--clr-header);
+    text-decoration: none;
+}
