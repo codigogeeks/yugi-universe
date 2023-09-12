@@ -88,10 +88,12 @@ header{
     border-radius: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .caixa {
-    height: 542px;
+    height: 50%;
+    text-align: center;
     flex-grow: 1;
 }
 
@@ -105,5 +107,6 @@ header{
 
 .estruturasFormatacao h1 {
     color: var(--clr-font);
-    font-size: 30px;
+    font-size: 50px;
+    margin-top: 30px;
 }
