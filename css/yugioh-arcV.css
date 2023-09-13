@@ -23,7 +23,6 @@ header{
     height: 70px;
     background-color: var(--clr-header);
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     margin: 0 auto;
     margin-top: 30px;
@@ -80,15 +79,9 @@ header{
     display: flex;
 }
 
-.tela-principal #personagem {
-    width: 100%;
-    max-width: 100%; 
-    height: auto;
-    padding: 20px; 
-}
-
 .estruturasFormatacao {
     max-width: 80%;
+    height: 542px;
     margin: 0 auto;
     margin-top: 100px;
     background-color: var(--clr-second-bg);
@@ -100,34 +93,35 @@ header{
 
 .estruturasFormatacao h1 {
     color: var(--clr-font);
-    font-size: 2.5rem; 
-}
-
-.estruturasFormatacao p {
-    color: var(--clr-font);
-    font-size: 20px;
-    font-family: 'Verdana', sans-serif;
-    text-align: left;
+    font-size: 9.4vh;
+    margin-top: 5px;
 }
 
 .caixa {
-    height: 90%;
+    height: 50%;
     flex-grow: 1;
-    padding: 20px; /* Adicione algum espaço interno para evitar que os elementos grudem nas bordas */
 }
 
-.caixa img {
-    width: 100%; /* Faça a imagem ocupar toda a largura da caixa */
-    max-width: 700px; /* Defina um tamanho máximo para a imagem */
-    height: 100%; /* Mantenha a proporção da imagem */
+.caixa img{
+    width: 50vh;
+    height: 50vh;
     border: 1px solid #FFCC77;
     border-radius: 50%;
-    margin: 0 auto; /* Centralize a imagem horizontalmente */
-
+    margin: 50px;
+    flex-grow: 1;
 }
 
 #descricaoPersonagem {
-    height: auto;
+    background-color: #BF3124;
     text-align: center;
+    height: auto;
+    flex-grow: 1;
 }
 
+
+
+
+/*Mobile*/
+@media (max-width: 480px){}
+
+/**/
