@@ -108,7 +108,6 @@ header{
     border: 1px solid #FFCC77;
     border-radius: 50%;
     margin: 50px;
-    flex-grow: 1;
 }
 
 #descricaoPersonagem {
@@ -117,11 +116,3 @@ header{
     height: auto;
     flex-grow: 1;
 }
-
-
-
-
-/*Mobile*/
-@media (max-width: 480px){}
-
-/**/
