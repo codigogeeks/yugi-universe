@@ -1,0 +1,187 @@
+/* Fonte do site */
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Open+Sans:wght@300&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-bg : #1B1C47;
+    --clr-header: #090909;
+    --clr-second-bg: #06102a;
+    --clr-elements: #3b488f;
+    --clr-font: #fff;
+}
+
+body {
+    background-color: var(--clr-bg);
+    font-family: 'Dhurjati', 'Verdana', sans-serif;
+}
+
+header{
+    max-width: 80%;
+    height: 70px;
+    background-color: var(--clr-header);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.caixa-esquerda, .caixa-direita{
+    width: 40%;
+    height: 70px;
+}
+
+.caixa-esquerda{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    display: block;
+    width: min(20rem, 80%);
+}
+
+#logo img{
+    width: 100%;
+    height: 91px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#menu li, a{
+    text-decoration: none;
+    color: var(--clr-font);
+    font-size: 32px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+#menu li:hover {
+    border-bottom: 3px solid #BF3124;
+    transition: all 0.5s;
+}
+
+/* caixa inicio menu */
+#fundo{
+    max-width: 80%;
+    height: 542px;
+    background-image: url(../img/background/background-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+}
+
+.fundo-cartas{
+    width: 80%;
+    height: 542px;
+    background-image: url(../img/background/background-menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    margin: 90px auto;
+    display: flex;
+    
+}
+
+/* cartas home */
+.cartas{
+    width: 25%;
+    height: 60%;
+    margin: 120px 0 40px 100px;
+    z-index: 2;
+    position: relative;
+}
+
+.cartas2{
+    width: 25%;
+    height: 60%;
+    margin: 180px 1px 0 0;
+    z-index: 3;
+    position: relative;
+}
+
+h2{
+    color: #fff ;
+    margin-top: 130px;
+    text-align: center;
+    font-size: 50px;
+}
+
+#eventos{
+    max-width: 80%;
+    height: 542px;
+    background-image: url(../img/background/background-eventos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 70px auto;
+    display: flex;
+}
+
+.eventos-branco{
+    background-color: #ffffffdb;
+    width: 35%;
+    height: 35%;
+    border-radius: 10px;
+    z-index: 2;
+    margin: 230px 200px 30px 130px;
+}
+
+.eventos-branco p{
+    margin: 45px 0 20px 50px;
+    font-size: 30px;
+}
+
+.eventos-branco i{
+    margin: 10px 0 0 280px;
+    font-size: 45px;
+}
+
+h3{
+    color: #FFF;
+    margin-left: 140px;
+    font-size: 45px;
+}
+
+#container-not-um, #container-not-dois, #container-not-tres{
+    background-color: #8a8a8a;
+    margin: 30px 0 1px 145px;
+    width: 50%;
+    height: 200px;
+    
+}
+
+#container-not-um img{
+    width: 35%;
+    margin: auto;
+    float: left;
+}
+
+.container-not-um{
+    background-color: #BF3124;
+    width: 60%;
+    height: 100%;
+    text-align: justify; 
+    font-size: 28px;
+    margin-left: 304px;
+    
+}
+
+#newslater{
+    background-color: #3b488f;
+    width: 120px;
+    height: 200px;
+    margin: 0 ;
+}
+
+
+
+
