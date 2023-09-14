@@ -8,22 +8,51 @@
     <link rel="icon" href="img/fav-icon.png">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/eventos.css" type="text/css">
+    <link rel="stylesheet" href="css/yugioh-arcV.css" type="text/css">
 </head>
 
 <body>
     <header>
+        <div class="caixa-esquerda">
+            <a href="index.html" id="logo">
+                <img src="img/logo-destaque-Yu-Gi-Oh!.png" alt="">
+            </a>
+        </div>
+        
 
+        <ul class="caixa-direita" id="menu">
+            <li>
+                <a href="index.html">INICIO</a>
+            </li>
+            <li>
+                <a href="eventos.html">EVENTOS</a>
+            </li>
+            <li>
+                <a href="series.html">SERIES</a>
+            </li>
+            <li>
+                <a href="#4">CONTATO</a>
+            </li>
+        </ul>
     </header>
 
     <main>
+        <!--HEADER IMAGEM-->
+        <section class="imagem-fundo">
+            <div id="imagem-header">
+                <img src="#" alt="">
+            </div>
+        </section>
+
         <!-- CONTEUDO CARTA VIRANDO -->
         <section class="fundo">
             <div class="container">
                 <div class="card">
                     <div class="front"></div>
                     <div class="back">
-                        <a href="https://www.yugioh-card.com/en/events-item/2023-07_totp-latam/" target="_blank"><img
-                                src="img/icones/CARTA-EVENTO.png"></a>
+                        <a href="https://www.yugioh-card.com/en/events-item/2023-07_totp-latam/" target="_blank">
+                            <img src="img/icones/CARTA-EVENTO.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -33,7 +62,8 @@
                     <div class="front"></div>
                     <div class="back">
                         <a href="https://www.yugioh-card.com/en/events-item/sbc1_celebration/" target="_blank"><img
-                                src="img/icones/CARTA-EVENTO1.png"></a>
+                            src="img/icones/CARTA-EVENTO1.png">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -58,10 +88,13 @@
                     <form action="#">
                         <h1>Criar Conta</h1>
 
-                        <span>Ou use seu email para se registrar</span>
+                        <label class="form-label">Nome</label>
                         <input id="name" type="text" placeholder="digite seu nome" />
+                        <label class="form-label">E-mail</label>
                         <input id="email" type="email" placeholder="digite seu e-mail" />
+                        <label class="form-label">Senha</label>
                         <input id="senha" type="password" placeholder="digite sua senha" />
+                        <label class="form-label">Dia</label>
                         <input id="data" type="date" placeholder="escolha o dia" />
                         <button>Inscreva-se</button>
                     </form>
@@ -69,6 +102,7 @@
                 <div class="form-container sign-in-container">
                     <form action="#">
                         <h1>Entrar</h1>
+
                         <label class="form-label">E-mail</label>
                         <input id="email" type="email" placeholder="digite seu e-mail" />
                         <label class="form-label">Senha</label>
