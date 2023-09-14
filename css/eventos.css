@@ -377,7 +377,7 @@ a,
     margin: 0;
 }
 
-.list-names {
+.list-names, .footer-left-title {
     font-size: 2rem;
 }
 
