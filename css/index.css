@@ -151,11 +151,22 @@ h3{
     font-size: 45px;
 }
 
+#caixa-noticia{
+    background-color: #1505fa;
+    background-size: cover;
+    margin: 90px 0 0 145px;
+    display: flex;
+    max-width: 50%;
+    height: 1042px;
+}
+
 #container-not-um, #container-not-dois, #container-not-tres{
-    background-color: #8a8a8a;
-    margin: 30px 0 1px 145px;
-    width: 50%;
-    height: 200px;
+    position: relative;
+    background-color: #ef6060;
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    flex-direction: column;
     
 }
 
@@ -165,21 +176,27 @@ h3{
     float: left;
 }
 
-.container-not-um{
-    background-color: #BF3124;
-    width: 60%;
+.container-not-um, .container-not-dois, .container-not-tres{
+    
+    background-color: #7e6765;
+    width: 510px;
     height: 100%;
     text-align: justify; 
     font-size: 28px;
-    margin-left: 304px;
+    margin-left: 250px;
+    flex-direction: column;
+   
     
 }
 
 #newslater{
-    background-color: #3b488f;
+    position: relative;
+    background-color: #16d837;
     width: 120px;
     height: 200px;
     margin: 0 ;
+    
+    
 }
 
 
