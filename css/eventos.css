@@ -187,6 +187,11 @@ button.ghost {
     color: #fff;
 }
 
+.entrar{
+    width: 250px;
+    margin-left: 25%;
+}
+
 form {
     background-image: url(../img/background/background-eventos-formulario.png);
     background-repeat: no-repeat;
