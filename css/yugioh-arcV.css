@@ -93,8 +93,17 @@ header{
 
 .estruturasFormatacao h1 {
     color: var(--clr-font);
-    font-size: 9.4vh;
-    margin-top: 5px;
+    font-size: 9.8vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.estruturasFormatacao p {
+    padding: 10px 30px;
+    font-size: 1.8rem;
+    font-family: verdana;
+    color: var(--clr-font);
+    text-align: left;
 }
 
 .caixa {
@@ -103,15 +112,17 @@ header{
 }
 
 .caixa img{
-    width: 50vh;
-    height: 50vh;
+    width: 60vh;
+    height: 60vh;
     border: 1px solid #FFCC77;
     border-radius: 50%;
     margin: 50px;
+    background-image: url(../img/background/background-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #descricaoPersonagem {
-    background-color: #BF3124;
     text-align: center;
     height: auto;
     flex-grow: 1;
