@@ -215,15 +215,6 @@ header{
   }
 
   
-  /*body { 
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #191c29;
-  }*/
 
   .card{
     width: var(--card-width);
@@ -339,14 +330,14 @@ header{
     height: 120px;
   }
 
-  p{
+ /* p{
   position:relative;
   width: auto;
   height: 350px;
   background-color: cornflowerblue;
   top:410px;
   margin: 0;
-  }
+  }*/
 
   .title {
     width:900px;
