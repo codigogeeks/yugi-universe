@@ -63,7 +63,7 @@ body {
     position: relative;
 }
 
-.card1__inner.is-flipped, 
+.card1__inner.is-flipped,
 .card2__inner.is-flipped,
 .card3__inner.is-flipped {
     transform: rotateY(180deg);
@@ -94,7 +94,7 @@ body {
     height: 100%;
 }
 
-.card__content img{
+.card__content img {
     width: 100%;
     height: 100%;
 }
@@ -188,7 +188,7 @@ h2 {
     text-align: center;
 }
 
-p {
+.texto {
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 0.5px;
@@ -415,7 +415,7 @@ input {
 /* FOOTER */
 footer {
     margin: 0 auto 10vh auto;
-    height: 65vh;
+    height: 70vh;
     max-width: 80%;
     background: url(../img/background/background-space.jpg) center center no-repeat;
     background-size: cover;
@@ -530,8 +530,6 @@ a,
     margin-top: 2rem;
 }
 
-
-
 .social-list {
     display: flex;
     justify-content: space-evenly;
@@ -542,10 +540,153 @@ a,
 }
 
 .copyright-container {
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     border-top: 2px solid var(--clr-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.copyright-title,
+.copyright-text {
+    color: var(--clr-font)
+}
+
+.top,
+.left,
+.bottom,
+.right {
+    position: absolute;
+    border-radius: 100vmax;
+}
+
+.top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(90deg,
+            transparent 50%,
+            rgba(255, 49, 49, 0.5),
+            rgb(255, 49, 49));
+}
+
+.bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(90deg,
+            rgb(57, 255, 20),
+            rgba(57, 255, 20, 0.5),
+            transparent 50%);
+}
+
+.right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(180deg,
+            transparent 30%,
+            rgba(0, 255, 255, 0.5),
+            rgb(0, 255, 255));
+}
+
+.left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(180deg,
+            rgb(255, 255, 113),
+            rgba(255, 255, 113, 0.5),
+            transparent 70%);
+}
+
+.top {
+    animation: animateTop 3s ease-in-out infinite;
+}
+
+.bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+}
+
+.right {
+    animation: animateRight 3s ease-in-out infinite;
+}
+
+.left {
+    animation: animateLeft 3s ease-in-out infinite;
+}
+
+@keyframes animateTop {
+    25% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    30%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateBottom {
+
+    0%,
+    50% {
+        opacity: 0;
+        width: 0;
+    }
+
+    75% {
+        opacity: 1;
+        width: 100%;
+    }
+
+    76%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animateRight {
+
+    0%,
+    25% {
+        opacity: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 1;
+        height: 100%;
+    }
+
+    55%,
+    100% {
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes animateLeft {
+
+    0%,
+    75% {
+        opacity: 0;
+        bottom: 0;
+        height: 0;
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+    }
+}
+
 
 /* DESKTOP */
 
