@@ -1,5 +1,8 @@
 /* Fonte do site */
-@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: yugioh;
+    src: url(../fonte/yu-gi-oh-matrix-bold.ttf);
+}
 
 *,
 *::after,
@@ -17,7 +20,7 @@
 
 body {
     background-color: var(--clr-bg);
-    font-family: 'Dhurjati', 'Verdana', sans-serif;
+    font-family: yugioh;
 }
 
 
