@@ -573,6 +573,7 @@ a,
 
 .copyright-title,
 .copyright-text {
+<<<<<<< HEAD
     color: var(--clr-font)
 }
 
@@ -714,4 +715,8 @@ a,
 
 @media screen and (max-width: 1920px) {
     
+=======
+    color: var(--clr-font);
+    font-size: 1.5rem;
+>>>>>>> bbb0932a46412484bb87cafdbcdc5dffaf534b4e
 }
