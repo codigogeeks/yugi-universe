@@ -8,7 +8,7 @@
     <link rel="icon" href="img/fav-icon.png">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/eventos.css" type="text/css">
-    <link rel="stylesheet" href="css/yugioh-arcV.css" type="text/css">
+    <link rel="stylesheet" href="css/yugioh-arcV.css">
     <script src="https://kit.fontawesome.com/e2a8d0d6fc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,7 +16,7 @@
     <header>
         <div class="caixa-esquerda">
             <a href="index.html" id="logo">
-                <img src="img/logo-destaque-Yu-Gi-Oh!.png" alt="">
+                <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="">
             </a>
         </div>
 
@@ -38,48 +38,52 @@
     </header>
 
     <main>
-        <!--HEADER IMAGEM-->
-        <section class="imagem-fundo">
-            <div id="imagem-header">
-                <img src="#" alt="">
+        <!--IMAGEM DO FUNDO-->
+        <section class="header">
+            <div class="imagem-nos">
+               <img src="img/background/atropa.png" alt="">
             </div>
+
         </section>
 
         <!-- CONTEUDO CARTA VIRANDO -->
         <section class="fundo">
-            <div class="container">
-                <div class="card">
-                    <div class="front"></div>
-                    <div class="back">
-                        <a href="https://www.yugioh-card.com/en/events-item/2023-07_totp-latam/" target="_blank">
+            <div class="card">
+                <div class="card1__inner">
+                    <div class="card__face card__face--front">
+                        <img src="img/carta.jpg" alt="Carta Yu-Gi-Oh">
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
                             <img src="img/icones/CARTA-EVENTO.png">
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="card">
-                    <div class="front"></div>
-                    <div class="back">
-                        <a href="https://www.yugioh-card.com/en/events-item/sbc1_celebration/" target="_blank"><img
-                                src="img/icones/CARTA-EVENTO1.png">
-                        </a>
+            <div class="card">
+                <div class="card2__inner">
+                    <div class="card__face card__face--front">
+                        <img src="img/carta.jpg" alt="Carta Yu-Gi-Oh">
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <img src="img/icones/CARTA-EVENTO1.png">
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container">
-                <div class="card">
-                    <div class="front"></div>
-                    <div class="back">
-                        <a href="https://www.yugioh-card.com/en/events-item/2023-ycs-vancouver/" target="_blank"><img
-                                src="img/icones/CARTA-EVENTO2.png">
-                        </a>
+            <div class="card">
+                <div class="card3__inner">
+                    <div class="card__face card__face--front">
+                        <img src="img/carta.jpg" alt="Carta Yu-Gi-Oh">
+                    </div>
+                    <div class="card__face card__face--back">
+                        <div class="card__content">
+                            <img src="img/icones/CARTA-EVENTO2.png">
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--CODIGO DO CRISTIANO SANTOS GONCALVES NO CODEPEN-->
         </section>
 
         <!--INSCREVA-SE FORMULARIO-->
@@ -89,22 +93,21 @@
                     <form action="#">
                         <h1>Criar Conta</h1>
 
-                        <label class="form-label">Nome</label>
+                        <label class="form-label">Nome </label>
                         <input id="name" type="text" placeholder="digite seu nome" />
-                        <label class="form-label">E-mail</label>
+                        <label class="form-label">E-mail </label>
                         <input id="email" type="email" placeholder="digite seu e-mail" />
                         <label class="form-label">Senha</label>
                         <input id="senha" type="password" placeholder="digite sua senha" />
-                        <label class="form-label">Dia</label>
-                        <input id="data" type="date" placeholder="escolha o dia" />
+                        <label class="form-label">Data</label>
+                        <input id="data" type="date" name="date" />
                         <button class="entrar">Inscreva-se</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
                     <form action="#">
                         <h1>Entrar</h1>
-
-                        <label class="form-label">E-mail</label>
+                        <label class="form-label">E-mail </label>
                         <input id="email" type="email" placeholder="digite seu e-mail" />
                         <label class="form-label">Senha</label>
                         <input id="senha" type="password" placeholder="digite sua senha" />
@@ -140,9 +143,8 @@
                     </h3>
 
                     <div class="footer-left-image">
-                        <a href="#">
-                            <img src="img/logo-destaque-Yu-Gi-Oh!.png" alt="Logo de Yu-Gi-Oh" width="250px"
-                                height="90px">
+                        <a href="#" class="footer-image">
+                            <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="Logo de Yu-Gi-Oh">
                         </a>
                     </div>
                 </div>
@@ -218,8 +220,17 @@
         </div>
 
         <div class="copyright-container">
-
+            <div class="copyright-title">
+                <h4>
+                    Desenvolvido por CodigoGeek<sup>©</sup>
+                </h4>
+            </div>
+            <p class="copyright-text">
+                Yu-Gi-Oh! é uma marca registrada de Kazuki Takahashi, Konami © 1996-2023.
+                Este website não é afiliado de forma alguma à Konami.
+            </p>
         </div>
+        
     </footer>
 
     <!--SCRIPT DO FORMULARIO-->
