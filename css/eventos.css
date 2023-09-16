@@ -1,5 +1,8 @@
 /* Fonte do site */
-@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: yugioh;
+    src: url(../fonte/yu-gi-oh-matrix-bold.ttf);
+}
 
 
 *,
@@ -15,28 +18,67 @@
     --clr-font: #fff;
 }
 
-body {
+body{
     background-color: #1B1C47;
-    font-family: 'Dhurjati', sans-serif;
+    font-family: yugioh;
+}
+
+
+/* HEADER */
+header {
+    max-width: 80%;
+    height: 70px;
+    background-color: var(--clr-header);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.caixa-esquerda,
+.caixa-direita {
+    width: 40%;
+    height: 70px;
+}
+
+.caixa-esquerda {
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    display: block;
+    width: min(20rem, 80%);
+}
+
+#logo img {
+    width: 100%;
+    height: 91px;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+#menu li,
+.anchor-header {
+    text-decoration: none;
+    color: var(--clr-font);
+    font-size: 32px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+#menu li:hover {
+    border-bottom: 3px solid #BF3124;
+    transition: all 0.5s;
 }
 
 /* EVENTOS */
-.fundo {
-    max-width: 80%;
-    height: 68vh;
-    margin: 0 auto;
-    margin-top: 30px;
-    background-image: url(../img/background/eventos.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 2em;
-    border-radius: 20px;
-}
-
 .header {
     max-width: 80%;
     height: 542px;
@@ -63,10 +105,25 @@ body {
     --light: #F3F3F3;
 }
 
+.fundo {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-image: url(../img/background/eventos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2em;
+    border-radius: 20px;
+}
 
 .card {
-    width: 25%;
-    height: 90%;
+    width: min(20vw, 30%);;
+    height: max(30vw, 30vh);
     perspective: 1000px;
 }
 
@@ -437,7 +494,6 @@ form {
 /* FOOTER */
 footer {
     margin: 0 auto 10vh auto;
-    height: 70vh;
     max-width: 80%;
     background: url(../img/background/background-space.jpg) center center no-repeat;
     background-size: cover;
@@ -446,8 +502,8 @@ footer {
 }
 
 .footer-content {
-    height: 55vh;
     width: 100%;
+    padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -457,6 +513,7 @@ footer {
 .footer-middle-container,
 .footer-right-container {
     width: 33.3%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -470,7 +527,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 0;
 }
 
 .footer-left-title-container {
@@ -503,7 +559,7 @@ a,
 }
 
 .footer-left-image {
-    width: clamp(10rem, 5vw, 15rem);
+    width: clamp(13rem, 16vw, 30rem);
     height: clamp(7rem, 6vh, 10rem);
 }
 
@@ -523,7 +579,6 @@ a,
 }
 
 .footer-list {
-    padding: 2rem 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -540,7 +595,7 @@ a,
 .list-names,
 .footer-left-title,
 .follow-us-title {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
 }
 
 .icon-link i {
@@ -562,19 +617,23 @@ a,
 }
 
 .copyright-container {
-    height: 15vh;
     width: 100%;
     border-top: 2px solid var(--clr-font);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.copyright-text{
+    margin-top: 1rem;
 }
 
 .copyright-title,
 .copyright-text {
     color: var(--clr-font);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1vw, 2rem);
     text-align: center;
 }
 
@@ -582,17 +641,40 @@ a,
 
 @media only screen and (min-width: 768px) {
     @media only screen and (max-width: 1024px) {
-        .footer-content {
-            flex-direction: column;
-        }
-
-        .footer-left-container,
-        .footer-middle-container,
-        .footer-right-container {
-            width: 100%;
-        }
+        
     }
 }
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .fundo{
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-left-container,
+    .footer-middle-container,
+    .footer-right-container {
+        width: 100%;
+    }
+
+    .footer-right-content-container,
+    .footer-list,
+    .footer-left-title-container {
+        padding: 0;
+    }
+
+    .footer-right-container{
+        height: auto;
+        padding-top: 1rem;
+    }
+
+    .footer-right-content-container{
+        height: 100%;
+        justify-content: space-around;
+    }
+
+
 }

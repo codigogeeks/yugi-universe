@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Open+Sans:wght@300&display=swap');
+@font-face {
+  font-family: yugioh;
+  src: url(../fonte/yu-gi-oh-matrix-bold.ttf);
+}
 
 /*HEADER*/
 *,
@@ -16,7 +19,7 @@
 
 body {
   background-color: #1B1C47;
-  font-family: 'Dhurjati', sans-serif;
+  font-family: yugioh;
 }
 
 header {
