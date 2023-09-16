@@ -37,6 +37,24 @@ body {
     border-radius: 20px;
 }
 
+.header {
+    max-width: 80%;
+    height: 542px;
+    background-image: url(../img/background/background-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+}
+
+.imagem-nos {
+    max-width: 80%;
+    height: 510px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 25px;
+}
+
 
 :root {
     --primary: #FFCE00;
@@ -207,10 +225,18 @@ h2 {
 #data {
     border-radius: 10px;
     border: 1px solid black;
+    opacity: 0.80;
 }
 
 .form-label {
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input {
+    padding: 12px 15px;
+    margin: 8px 0;
 }
 
 button {
@@ -237,11 +263,13 @@ button.ghost {
     background-color: #000;
     border-color: red;
     color: #fff;
+    cursor: pointer;
 }
 
 .entrar {
     width: 250px;
     margin-left: 25%;
+    cursor: pointer;
 }
 
 form {
@@ -256,19 +284,13 @@ form {
     height: 100%;
 }
 
-input {
-    background-color: #f2eee3;
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-}
+
 
 .formulario {
     background-image: url(../img/background/background-eventos-formulario.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 60px;
     position: relative;
     width: 163vh;
@@ -556,10 +578,21 @@ a,
     text-align: center;
 }
 
+@media screen and (max-width: 1920px) {}
+
 @media only screen and (min-width: 768px) {
     @media only screen and (max-width: 1024px) {
-        footer
+        .footer-content {
+            flex-direction: column;
+        }
+
+        .footer-left-container,
+        .footer-middle-container,
+        .footer-right-container {
+            width: 100%;
+        }
     }
 }
 
 @media only screen and (max-width: 767px) {}
+}
