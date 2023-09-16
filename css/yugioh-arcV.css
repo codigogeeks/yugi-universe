@@ -94,7 +94,7 @@ a {
 .containerFormatacao {
     width: 80%;
 
-    height: 70vh;
+    min-height: 70vh;
 
     margin: 100px auto;
 
@@ -120,13 +120,15 @@ a {
 }
 
 .caixa1 {
-    width: 50%;
-    height: 65vh;
+    position: relative;
+    min-width: 50%;
+    min-height: 65vh;
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .caixa img {
@@ -137,14 +139,88 @@ a {
     border-radius: 50%;
 }
 
-
-#um  {
-    
+.caixa1 span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #BF9C2A);
+    animation: animar1 2s linear infinite;
+    animation-delay: 1s;
 }
 
-#dois {
-    background-color: #bf2a2a;
-} 
+/* Essa parte faz a animação da ciaxa que fara uma descrição dos personagens*/
+@keyframes animar1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.caixa1 span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #9C8D5A);
+    animation: animar2 2s linear infinite;
+}
+
+@keyframes animar2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.caixa1 span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #F0DA87);
+    animation: animar3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animar3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.caixa1 span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #ff0);
+    animation: animar4 2s linear infinite;
+}
+
+@keyframes animar4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+ /*#dois {
+ background-color: #bf2a2a;
+} */ 
 
 
 
