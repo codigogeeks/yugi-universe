@@ -82,6 +82,8 @@ a {
   max-width: 80%;
   height: 550px;
   margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrap {
