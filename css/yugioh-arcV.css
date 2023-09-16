@@ -78,6 +78,7 @@ a {
     transition: all 0.5s;
 }
 
+/* Imagem de fundo da tela*/
 .tela-principal {
     max-width: 80%;
     height: 542px;
@@ -85,17 +86,14 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    display: flex;
 }
 
 .containerFormatacao {
-    max-width: 80%;
-    min-width: 50%;
+    width: 80%;
+
     height: 70vh;
 
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 100px auto;
 
     background-color: var(--clr-second-bg);
     border-radius: 50px 0 50px 0;
@@ -103,33 +101,36 @@ a {
     display: flex;
     flex-direction: row;
 
-    flex-wrap: wrap;
+    padding: 10px;
 }
 
-.estruturasFormatacao h1 {
-    color: var(--clr-font);
-    font-size: 9.8vh;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.estruturasFormatacao p {
-    padding: 10px 30px;
-    font-size: 1.8rem;
-    font-family: verdana;
-    color: var(--clr-font);
-    text-align: left;
-}
 
 .caixa {
     width: 50%;
-    height: 90%;
-    margin: auto;
+    height: 65vh;
+    margin: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 
+.caixa img {
+    width: 75%;
+    height: 80%;
+    background-image: url(../img/background/background-space.jpg);
+    border: 2px solid #BF9C2A;
+    border-radius: 50%;
+}
+
+#um  {
+    background-color: #BF3124;
+}
+
+#dois {
+    background-color: blueviolet;
+}
+
+/*
 .imagem-personagem {
     max-width: 80%;
     margin: 2% 10%;
@@ -253,19 +254,22 @@ a {
     color: var(--dark);
     font-size: 18px;
     line-height: 1.4;
-}
+}*/
 
 
 @media screen and (max-width: 800px) {
     .containerFormatacao {
+        height: 140vh;
         display: flex;
-        height: 100%;
         flex-direction: column;
-        flex-wrap: wrap;
+        
     }
 
-    .caixa{
-        height: 50%;
+    .caixa {
+        width: 100%;
+        height: 65vh;
+        margin: auto 0;
+       
     }
-    
+
 }
