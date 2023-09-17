@@ -17,3 +17,10 @@ document.getElementById("r").addEventListener("click", function(){
     if (x < confr){x = 280}else{
     document.getElementById("move").style.marginLeft = x + "px";}
 });
+
+
+// botao
+
+function Evento(){
+    alert('E-mail enviado com sucesso');
+}
