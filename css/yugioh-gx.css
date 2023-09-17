@@ -95,7 +95,7 @@ a {
     transition: all 0.5s;
 }
 
-/* Ajustes da Imagem de fundo da tela*/
+/*Imagem de fundo da tela*/
 .tela-principal {
     max-width: 80%;
     height: 542px;
@@ -103,6 +103,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    
 }
 
 .overlay{
@@ -112,33 +113,42 @@ a {
 
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    
+
 }
 
+/* div responsável por ter a imagem do personagem*/
 #personagem-tela-principal {
    width: 45%;
-   height: 542px;
-background-color: #85784b;
+   height: 542px;   
+   margin: auto;
 }
 
+/* Ajuste do personagem a div que está dentro */
+#personagem-tela-principal img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+ }
+
+  /* Div responsável pelo posicionamento da Logo */
 #descricaoSerie {
     width: 45%;
     height: 542px;
-    background-color: #85784b;
+    margin: auto;
+
     display: flex;
-    flex-direction: column;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
+#descricaoSerie img {
+    width: 100%;
+}
 
 .containerFormatacao {
     width: 80%;
-
     min-height: 70vh;
-
     margin: 100px auto;
 
     background-color: var(--clr-second-bg);
@@ -148,7 +158,6 @@ background-color: #85784b;
     flex-direction: row;
 
     padding: 10px;
-
     box-shadow: 0px 10px 100px #3B488F;
 }
 
@@ -168,8 +177,6 @@ background-color: #85784b;
     min-height: 65vh;
     margin: 10px;
     display: flex;
-    /*justify-content: center;
-    align-items: center; */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -440,6 +447,14 @@ a,
         width: 100%;
         height: 65vh;
         margin: auto 0;
+    }
+
+    .overlay{
+        flex-direction: column;
+    }
+
+    #descricaoSerie{
+        width: 100%;
     }
 }
 
