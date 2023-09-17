@@ -219,6 +219,15 @@ a {
   background-color: var(--clr-header);
 }
 
+
+a p{ /*edição do paragrafo cards*/
+  margin-top: 19px;
+  font-size: 12px;
+  font-style: normal;
+  text-align: center;
+
+}
+
 .card {
   width: min(300px, 70vw);
   height: min(500px, 70vh);
