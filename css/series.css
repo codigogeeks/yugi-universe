@@ -3,6 +3,7 @@
   src: url(../fonte/yu-gi-oh-matrix-bold.ttf);
 }
 
+
 /*HEADER*/
 *,
 *::after,
@@ -116,7 +117,7 @@ a {
   padding: 0 0px;
   margin: 5rem auto;
   max-width: 800px;
-  width: 100%;
+  width:  100%;
 }
 
 .slick-arrow {
@@ -144,8 +145,6 @@ a {
   right: -50px;
   text-align: right;
 }
-
-
 
 .item.slick-slide {
   width: 400px;
@@ -204,6 +203,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem 1rem;
+  margin-bottom: 30px;
 }
 
 :root {
@@ -308,13 +308,17 @@ a {
 
 /* FOOTER */
 footer {
-  margin: 0 auto;
-  height: 55vh;
+  margin: 0 auto 10vh auto;
   max-width: 80%;
   background: url(../img/background/background-space.jpg) center center no-repeat;
   background-size: cover;
   background-color: #fff;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.footer-content {
+  width: 100%;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -324,10 +328,28 @@ footer {
 .footer-middle-container,
 .footer-right-container {
   width: 33.3%;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.footer-left-title-container,
+.footer-right-content-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-left-title-container {
+  justify-content: space-between;
+}
+
+.footer-right-content-container {
+  justify-content: baseline;
 }
 
 .footer-left-title-container,
@@ -336,3 +358,199 @@ a,
   color: var(--clr-font);
   text-decoration: none;
 }
+
+.footer-left-title-container,
+a,
+.follow-us-title {
+  color: var(--clr-font);
+  text-decoration: none;
+}
+
+.footer-left-title-container,
+.follow-us-title,
+.list-names {
+  color: var(--clr-font);
+  text-decoration: none;
+}
+
+.footer-left-image {
+  width: clamp(13rem, 16vw, 30rem);
+  height: clamp(7rem, 6vh, 10rem);
+}
+
+.footer-image {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.link-container {
+  width: 80%;
+  height: 80%;
+}
+
+.footer-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-links .list-names,
+.list-links,
+.icon-link {
+  margin: 0;
+}
+
+.list-names,
+.footer-left-title,
+.follow-us-title {
+  font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+}
+
+.icon-link i {
+  color: var(--clr-font);
+}
+
+.social-icons-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-link i {
+  font-size: 2.5rem;
+}
+
+.copyright-container {
+  width: 100%;
+  border-top: 2px solid var(--clr-font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.copyright-text{
+  margin-top: 1rem;
+}
+
+.copyright-title,
+.copyright-text {
+  color: var(--clr-font);
+  font-size: clamp(1rem, 1vw, 2rem);
+  text-align: center;
+}
+
+/* TESTE */
+
+.article {
+  display: grid; 
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  
+  gap: 0px;
+  height: 100%;
+  visibility: hidden;
+  
+}
+ 
+#item-0 {
+
+  background-color: #465917; 
+  grid-row-start: 1;
+  grid-column-start: 4;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+  visibility: hidden;
+  
+}
+
+/* DESKTOP */
+@media screen and (max-width: 1920px) {}
+
+@media only screen and (min-width: 768px) {
+  @media only screen and (max-width: 1024px) {
+      
+  }
+}
+/* TABLET */
+@media only screen and (max-width: 767px) {
+  .fundo{
+      flex-direction: column;
+  }
+  
+  .footer-content {
+      flex-direction: column;
+  }
+
+  .footer-left-container,
+  .footer-middle-container,
+  .footer-right-container {
+      width: 100%;
+  }
+
+  .footer-right-content-container,
+  .footer-list,
+  .footer-left-title-container {
+      padding: 0;
+  }
+
+  .footer-right-container{
+      height: auto;
+      padding-top: 1rem;
+  }
+
+  .footer-right-content-container{
+      height: 100%;
+      justify-content: space-around;
+  }
+
+  .entrar{
+      width: 120px;
+      margin-left: 25px;
+  }
+  
+  .imagem-nos{
+      width: 300vh;
+      height: 280px;
+      margin-top: 60px;
+      margin-left: 30px;
+  }
+
+  .header{
+      height: 400px;
+  }
+
+  .formulario{
+      display: none;
+  }
+
+
+}
+
+/* celular */
+
+@media screen and (max-width: 600px){
+  .article{
+      visibility: visible;
+  }
+
+  #item-0{
+      visibility: visible;
+  }
+
+}
+

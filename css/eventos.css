@@ -243,6 +243,8 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     margin: 0;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .bem-vindo {
@@ -289,6 +291,7 @@ h2 {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    color: #fff;
 }
 
 input {
@@ -480,12 +483,7 @@ form {
 }
 
 #esqueceu {
-    color: #000;
-    font-size: 35px;
-}
-
-#esqueceu {
-    color: #000;
+    color: #FFF;
     font-size: 35px;
 }
 

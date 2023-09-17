@@ -37,3 +37,5 @@ card3.addEventListener("mouseover", () => {
 card3.addEventListener("mouseout", () => {
 	card3.classList.toggle('is-flipped');
 });
+
+// botao
