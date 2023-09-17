@@ -215,14 +215,19 @@ a {
 }
 
 .card-desc {
-  height: 600px;
+  height: 700px;
   background-color: var(--clr-header);
+  border-radius: 20px;
+}
+
+.card-desc img{
+  border-radius: 20px ;
 }
 
 
 a p{ /*edição do paragrafo cards*/
   margin-top: 19px;
-  font-size: 12px;
+  font-size: 19px;
   font-style: normal;
   text-align: center;
 
