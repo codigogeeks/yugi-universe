@@ -230,7 +230,7 @@ header {
 
 /* FORMULARIO DO EVENTO */
 
-#forms {
+#forms { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,8 +329,8 @@ button.ghost {
 }
 
 .entrar {
-    width: 250px;
-    margin-left: 25%;
+    width: 80%;
+    margin-left: 10%;
     cursor: pointer;
 }
 
@@ -347,12 +347,13 @@ form {
 
 .formulario {
     background-image: url(../img/background/background-eventos-formulario.png);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
     margin-top: 60px;
     position: relative;
-    width: 163vh;
+    width: 80%;
     height: 280vh;
     
 }
@@ -637,21 +638,25 @@ a,
 }
 
 /* TESTE */
-
+/* 
     .article {
-        visibility: hidden;
+        display: none;
     }
    
     #item-0 {
-        visibility: hidden;
+        display: none;
     }
 
     #imagem-responsivo-formulario img{
-        visibility: hidden;
-    }
+        display: none;
+    } */
 
 /* DESKTOP */
 @media screen and (max-width: 1920px) {
+    .formulario-mobile{
+        display: none;
+    }
+
     .angry-grid{
         display: none;
     }
@@ -668,6 +673,10 @@ a,
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
+    .formulario-mobile{
+        display: none;
+    }
+
     .angry-grid{
         display: none;
     }
@@ -684,6 +693,10 @@ a,
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+    .formulario-mobile{
+        display: none;
+    }
+
     .angry-grid{
         display: none;
     }
@@ -704,6 +717,10 @@ a,
 /* TABLET */
 
 @media (min-width: 768px) and (max-width: 991px){
+    .formulario-mobile{
+        display: none;
+    }
+
     .angry-grid{
         display: none;
     }
@@ -724,6 +741,14 @@ a,
 /* celular */
 
 @media (min-width: 481px) and (max-width: 767px) {
+    .formulario-mobile{
+        display: block;
+    }
+
+    .angry-grid{
+        display: block;
+    }
+
     .fundo{
         flex-direction: column;
     }
