@@ -9,10 +9,23 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/yugioh-gx.css" type="text/css">
     <script src="https://kit.fontawesome.com/e2a8d0d6fc.js" crossorigin="anonymous"></script>
-    
+
 </head>
 
 <body>
+    <!-- API DE LIBRAS -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script class="vlibras" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
     <header>
         <div class="caixa-esquerda">
             <a href="index.html" id="logo">
@@ -40,7 +53,23 @@
     <main>
         <!-- Tela principal -->
         <section class="tela-principal">
+            <div class="overlay">
+                <div id="personagem-tela-principal">
+                    
+                </div>
 
+
+                <div id="descricaoSerie">
+                    <div id="logo-serie">
+                        
+                    </div>
+
+                    <div id="sinopse-serie">
+
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!-- Personagens-->
