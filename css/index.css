@@ -73,6 +73,9 @@ header{
 }
 
 
+main{
+    overflow: hidden;
+}
 
 /* caixa inicio menu */
 #fundo{
@@ -269,10 +272,13 @@ h2{
     font-size: 45px;
 }
 
-h3{
-    position: relative;
-    color: #FFF;
-    margin: 0 0 20px 165px;
+.title-noticias-container{
+    max-width: 80%;
+    margin: 10vh auto;
+}
+
+.title-noticias{
+    color: var(--clr-font);
     font-size: 50px;
 }
 
@@ -407,7 +413,7 @@ fieldset{
 }
 
 footer {
-    margin: 0 auto 10vh auto;
+    margin: 10vh auto 10vh auto;
     max-width: 80%;
     background: url(../img/background/background-space.jpg) center center no-repeat;
     background-size: cover;
