@@ -646,9 +646,8 @@ a,
         visibility: hidden;
     }
 
-    #imagem-responsivo-formulario{
+    #imagem-responsivo-formulario img{
         visibility: hidden;
-        background-image: url(../img/background/formulario-responsivo.png);
     }
 
 /* DESKTOP */
@@ -692,7 +691,7 @@ a,
     .imagem-nos img{
         width: 100vh;
         height: 280px;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     .header{
@@ -712,7 +711,7 @@ a,
     .imagem-nos img{
         width: 250vh;
         height: 280px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
     
     .header{
@@ -772,7 +771,7 @@ a,
     .imagem-nos img{
         width: 250vh;
         height: 200px;
-        margin-top: 60px;
+        margin-top: 40px;
         margin: auto;
     }
 
@@ -787,10 +786,15 @@ a,
     #forms{
         display: none;
     }
+
+    #imagem-responsivo-formulario img{
+        visibility: visible;
+        
+    }
 }
 
 @media (min-width: 320px) and (max-width: 482px){
-    #imagem-responsivo-formulario{
+    #imagem-responsivo-formulario img{
         visibility: visible;
     }
 
@@ -803,9 +807,9 @@ a,
     }
 
     .imagem-nos img{
-        width: 200px;
-        height: 150px;
-        margin-top: 70px;
+        width: 300px;
+        height: 200px;
+        margin-top: 40px;
     }
 
     .header{
