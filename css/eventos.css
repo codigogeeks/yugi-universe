@@ -522,7 +522,7 @@ footer {
 
 .footer-left-title-container,
 .footer-right-content-container {
-    width: 80%;
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -595,7 +595,7 @@ a,
 .list-names,
 .footer-left-title,
 .follow-us-title {
-    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+    font-size: clamp(1.5rem, 1.8vw, 2.5rem);
 }
 
 .icon-link i {
@@ -654,10 +654,19 @@ a,
         flex-direction: column;
     }
 
+    .footer-left-container{
+        height: auto;
+        padding: 1rem;
+    }
+
     .footer-left-container,
     .footer-middle-container,
     .footer-right-container {
         width: 100%;
+    }
+
+    .footer-left-image{
+        margin-top: 1rem;
     }
 
     .footer-right-content-container,
