@@ -330,9 +330,8 @@ button.ghost {
 }
 
 form {
-    background-image: url(../img/background/background-eventos-formulario.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #010F37;
+    
     display: flex;
     border-radius: 10px;
     justify-content: center;
@@ -340,7 +339,6 @@ form {
     padding: 0 50px;
     height: 100%;
 }
-
 
 
 .formulario {
@@ -351,7 +349,8 @@ form {
     margin-top: 60px;
     position: relative;
     width: 163vh;
-    height: 100vh;
+    height: 280vh;
+    
 }
 
 .form-container {
@@ -637,6 +636,33 @@ a,
     text-align: center;
 }
 
+/* TESTE */
+
+.article {
+    display: grid; 
+ 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    gap: 0px;
+    height: 100%;
+    visibility: hidden;
+    
+ }
+   
+ #item-0 {
+ 
+    background-color: #465917; 
+    grid-row-start: 1;
+    grid-column-start: 4;
+ 
+    grid-row-end: 3;
+    grid-column-end: 6;
+    visibility: hidden;
+    
+ }
+
+/* DESKTOP */
 @media screen and (max-width: 1920px) {}
 
 @media only screen and (min-width: 768px) {
@@ -644,7 +670,7 @@ a,
         
     }
 }
-
+/* TABLET */
 @media only screen and (max-width: 767px) {
     .fundo{
         flex-direction: column;
@@ -685,5 +711,39 @@ a,
         justify-content: space-around;
     }
 
+    .entrar{
+        width: 120px;
+        margin-left: 25px;
+    }
+    
+    .imagem-nos{
+        width: 300vh;
+        height: 280px;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+
+    .header{
+        height: 400px;
+    }
+
+    .formulario{
+        display: none;
+    }
+
 
 }
+
+/* celular */
+
+@media screen and (max-width: 600px){
+    .article{
+        visibility: visible;
+    }
+
+    #item-0{
+        visibility: visible;
+    }
+
+}
+
