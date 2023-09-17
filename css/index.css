@@ -4,7 +4,11 @@
     src: url(../fonte/yu-gi-oh-matrix-bold.ttf);
 }
 
+<<<<<<< HEAD
 *,::after,*::before{
+=======
+*,*::after,*::before{
+>>>>>>> 4f9134c56c435ec1891d03c3bef3d9f5dcbde05c
     box-sizing: border-box;
 }
 
