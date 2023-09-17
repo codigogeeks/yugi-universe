@@ -8,7 +8,6 @@
     <link rel="icon" href="img/fav-icon.png">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/index.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- link font waresome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -23,8 +22,6 @@
                 <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="">
             </a>
         </div>
-
-        
 
 
         <ul class="caixa-direita" id="menu">
@@ -47,8 +44,6 @@
         <section id="fundo">
 
             <!-- carroucel -->
-
-          
             <div class="carrousel">
                 <div class="tapa" id="move">
                     <div class="item"><img src="img/cartas/Buraco Negro.jpg"></div>
@@ -58,16 +53,6 @@
                     <div class="item"><img src="img/cartas/Dragão Definitivo de Olhos Azuis.jpg"></div>
                     <div class="item"><img src="img/cartas/Dragão Negro de Olhos Vermelhos.jpg"></div>
                     <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
-
-
-
                 </div>
                 <!-- controls -->
                 <div class="cont">
@@ -75,114 +60,176 @@
                     <div class="right controls" id="r"><img src="img/setaE.png"></div>
                 </div>
             </div>
+            <!-- fim carroucel -->
 
+        </section>
 
+        <!-- Imagem flutuante -->
+        <img class="flutuante" src="img/carta.jpg" alt="">
+        <img class="flutuante2" src="img/carta.jpg" alt="">
+        <img class="flutuante3" src="img/carta.jpg" alt="">
 
+        <h2>EVENTOS</h2>
 
+        <section id="eventos">
+            <div class="eventos-branco">
+                <p>Campeonatos</p>
+                <a href="eventos.html"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></a>
+            </div>
+        </section>
 
+        <div class="title-noticias-container">
+            <h3 class="title-noticias">Notícias</h3>
+        </div>
 
+        <section id="caixa-noticia">
+            <div id="container-not-um">
+                <a href="https://www.yugioh-card.com/en/news/2023-ygo-national-championships/" target="_blank"><img
+                        src="img/icones/2023-wcq-NATIONAL_180.png" alt=""></a>
+                <article class="container-not-um">
+                    <h4>O caminho para Yu-Gi-Oh! <br>O Campeonato Mundial 2023 continua!</h4>
+                    <p>Os campeonatos nacionais de Yu-Gi-Oh 2023, começam em maio, com milhares de duelistas competindo
+                        pela américa latina.</p>
+                </article>
+            </div>
 
+            <div id="container-not-dois">
+                <a href="https://www.yugioh-card.com/en/news/announcing-the-dragon-duel-championship/"
+                    target="_blank"><img src="img/icones/TCG_logo_70h.png" alt=""></a>
+                <article class="container-not-dois">
+                    <h4>Anunciando o Campeonato Dragon Duel!</h4>
+                    <p>Muita coisa mudou no mundo. Também estamos fazendo mudanças enquanto trabalhamos para oferecer as
+                        melhores experiências de Jogo Organizado para nossos Duelistas na América do Norte e Latina.</p>
+                </article>
+            </div>
 
+            <div id="container-not-tres">
+                <a href="https://www.yugioh-card.com/en/news/world-championship-2023/" target="_blank"><img
+                        src="img/icones/WCS2023_logo_180.png" alt=""></a>
+                <article class="container-not-tres">
+                    <h4>Konami anuncia o retorno do Yu-Gi-Oh! Campeonato Mundial para 2023</h4>
+                    <p>A Konami Digital Entertainment Inc., tem o prazer de anunciar seus planos de realizar o Yu-Gi-Oh!
+                        Campeonato Mundial 2023, para determinar os melhores duelistas do mundo.</p>
+                </article>
+            </div>
+        </section>
+        
+        <div id="newslater">
+            <i class="fa-regular fa-envelope" style="color: #fff;"></i>
+            <h2>Se inscreva na nossa newslater</h2>
 
+            <form>
+                <fieldset>
 
+                    <label class="email">E-mail</label>
+                    <input id="email" type="email" required placeholder="Digite seu e-mail">
 
+                    <button id="botao" type="submit" onclick="Evento()" href="#">enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 
-    
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-content">
+            <section class="footer-left-container">
+                <div class="footer-left-title-container">
+                    <h3 class="footer-left-title">
+                        YU-GI-UNIVERSE
+                    </h3>
 
+                    <div class="footer-left-image">
+                        <a href="#" class="footer-image">
+                            <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="Logo de Yu-Gi-Oh">
+                        </a>
+                    </div>
+                </div>
+            </section>
 
+            <section class="footer-middle-container">
+                <div class="link-container">
+                    <ul class="footer-list">
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    LINKS
+                                </span>
+                            </a>
+                        </li>
 
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    INICIO
+                                </span>
+                            </a>
+                        </li>
 
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    EVENTOS
+                                </span>
+                            </a>
+                        </li>
 
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    SERIES
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
+            <section class="footer-right-container">
+                <div class="footer-right-content-container">
+                    <div class="follow-us-container">
+                        <h2 class="follow-us-title">
+                            SIGA-NOS
+                        </h2>
+                    </div>
 
+                    <div class="social-icons-container">
+                        <ul class="social-list">
+                            <li class="social-icon-container">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li class="social-icon-container">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-icon-container">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
 
+        <div class="copyright-container">
+            <div class="copyright-title">
+                <h4>
+                    © Desenvolvido por CodigoGeek
+                </h4>
+            </div>
+            <p class="copyright-text">
+                Yu-Gi-Oh! é uma marca registrada de Kazuki Takahashi, Konami © 1996-2023.
+            </p>
+        </div>
 
+    </footer>
 
-
-
-
-
-
-
-<!-- fim carroucel -->
-
-</section>
-
-<!-- Imagem flutuante -->
-<img class="flutuante" src="img/carta.jpg" alt="">
-<img class="flutuante2" src="img/carta.jpg" alt="">
-<img class="flutuante3" src="img/carta.jpg" alt="">
-
-<h2>EVENTOS</h2>
-
-<section id="eventos">
-    <div class="eventos-branco">
-        <p>Campeonatos</p>
-        <i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i>
-    </div>
-</section>
-
-<h3>Notícias</h3>
-
-<section id="caixa-noticia">
-    
-    <div id="container-not-um">
-        <img id="imag" src="img/icones/2023-wcq-NATIONAL_180.png" alt="">
-        <article class="container-not-um">
-            <h4>O caminho para Yu-Gi-Oh! O Campeonato Mundial 2023 continua!</h4>
-            <br>
-            <p>Os campeonatos nacionais de Yu-Gi-Oh 2023, começam em maio, com milhares de duelistas competindo pela
-                américa latina.</p>
-        </article>
-    </div>
-
-    <div id="container-not-dois">
-        <img src="img/icones/TCG_logo_70h.png" alt="">
-        <article class="container-not-dois">
-            <h4>Anunciando o Campeonato Dragon Duel!</h4>
-            <br>
-            <p>Muita coisa mudou no mundo. Também estamos fazendo mudanças enquanto trabalhamos para oferecer as melhores experiências de Jogo Organizado para nossos Duelistas na América do Norte e Latina.</p>
-        </article>
-    </div>
-
-    <div id="container-not-tres">
-        <img src="img/icones/WCS2023_logo_180.png" alt="">
-        <article class="container-not-tres">
-            <h4>Konami anuncia o retorno do Yu-Gi-Oh! Campeonato Mundial para 2023</h4>
-            <br>
-            <p>A Konami Digital Entertainment Inc., tem o prazer de anunciar seus planos de realizar o Yu-Gi-Oh!
-                Campeonato Mundial 2023, para determinar os melhores duelistas do mundo.</p>
-        </article>
-    </div>
-</section>
-
-<div id="newslater">
-    <i class="fa-regular fa-envelope" style="color: #ffffff;"></i>
-    <h2>Se inscreva na nossa newslater</h2>
-
-    <form>
-        <fieldset>
-
-            <label></label>
-            <input id="email" type="email" required placeholder="Digite seu E-mail:">
-
-            <input id="botao" type="submit" value="Enviar"></input>
-        </fieldset>
-    </form>
-
-    <br>
-    <br>
-
-
-</div>
-
-</main>
-
-<footer>
-
-</footer>
-<script src="js/index.js" charset="utf-8"></script>
-
+    <script src="js/index.js" charset="utf-8"></script>
 </body>
 
 </html>
