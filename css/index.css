@@ -4,14 +4,12 @@
     src: url(../fonte/yu-gi-oh-matrix-bold.ttf);
 }
 
-*,
-*::after,
-*::before {
+,::after,*::before{
     box-sizing: border-box;
 }
 
-:root {
-    --clr-bg: #1B1C47;
+:root{
+    --clr-bg : #1B1C47;
     --clr-header: #090909;
     --clr-second-bg: #06102a;
     --clr-elements: #3b488f;
@@ -33,46 +31,22 @@ header{
     margin-top: 30px;
 }
 
-main {
-    max-width: 320px;
-    max-width: 1800px;
-    margin: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.caixa-esquerda,
-.caixa-direita {
+.caixa-esquerda, .caixa-direita{
     width: 40%;
     height: 70px;
 }
 
-.caixa-esquerda {
+.caixa-esquerda{
     display: flex;
     justify-content: center;
 }
 
-#logo {
+#logo{
     display: block;
     width: min(20rem, 80%);
 }
 
-#logo img {
+#logo img{
     width: 100%;
     height: 91px;
 }
@@ -85,8 +59,7 @@ main {
     flex-grow: 1;
 }
 
-#menu li,
-a {
+#menu li, a{
     text-decoration: none;
     color: var(--clr-font);
     font-size: 32px;
@@ -115,7 +88,7 @@ main{
     display: flex;
 }
 
-.fundo-cartas {
+.fundo-cartas{
     position: relative;
     width: 80%;
     height: 542px;
@@ -139,7 +112,6 @@ main{
     cursor: pointer;
     background-color: rgba(41, 40, 40, 0.266);
 }
-
 .left {
     margin-left: -50px;
 }
@@ -154,16 +126,14 @@ main{
     margin: auto;
     height: 450px;
     margin-top: 70px;
-
-    overflow: hidden;
+    
+    overflow:hidden;
 }
-
 .controls:hover {
     background-color: rgba(108, 88, 0, 0.644);
-
+    
 }
-
-.controls img {
+.controls img{
     height: 30px;
     width: 32px;
     margin: -7px 0 0 -10px;
@@ -180,24 +150,20 @@ main{
 
 .cont {
     position: absolute;
-    margin: 190px 100px auto auto;
     width: 1050px;
     margin-top: 190px;
     margin-left: 15px;
-
+   
 }
-
 .tapa {
     width: 4500px;/* 	change if the size is >     12000  :) */
     transition: .9s all;
 }
-
 .item img {
     width: 100%;
     height: 100%;
-
+    
 }
-
 .item:hover {
     margin-top: -5px;
 }
@@ -207,19 +173,19 @@ main{
 
 /* imagem flutuante */
 
-.flutuante {
+.flutuante{
     position: absolute;
     display: flex;
-    max-width: 200px;
+    max-width: 230px;
     transform: translatey(0x);
     animation: float 4s ease-in-out infinite;
     z-index: 999;
     rotate: -15deg;
-    top: 500px;
-    left: -90px;
+    top:550px;
+    left:-90px;
 }
 
-.flutuante2 {
+.flutuante2{
     position: absolute;
     display: flex;
     max-width: 210px;
@@ -231,7 +197,7 @@ main{
     left:1070px;
 }
 
-.flutuante3 {
+.flutuante3{
     position: absolute;
     display: flex;
     max-width: 210px;
@@ -239,28 +205,26 @@ main{
     animation: float 4s ease-in-out infinite;
     z-index: 999;
     rotate: 1deg;
-    top: 1900px;
-    left: 1100px;
+    top:2055px;
+    left:1100px;
 }
 
 
 @keyframes float {
-    0% {
+    0%{
         transform: translateY(0px);
     }
-
-    50% {
+    50%{
         transform: translateY(-30px);
     }
-
-    100% {
+    100%{
         transform: translateY(0px);
     }
-
+    
 }
 
 
-h2 {
+h2{
     position: relative;
     color: #fff ;
     margin-top: 50px;
@@ -268,7 +232,7 @@ h2 {
     font-size: 50px;
 }
 
-#eventos {
+#eventos{
     position: relative;
     display: grid;
     max-width: 80%;
@@ -276,11 +240,11 @@ h2 {
     background-image: url(../img/background/background-eventos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 50px auto;
+    margin: 70px auto;
     display: flex;
 }
 
-.eventos-branco {
+.eventos-branco{
     display: grid;
     position: relative;
     background-color: #ffffffdb;
@@ -292,7 +256,7 @@ h2 {
     opacity: 1;
 }
 
-.eventos-branco p {
+.eventos-branco p{
     display: grid;
     position: relative;
     margin: 45px 0 30px 50px;
@@ -301,7 +265,7 @@ h2 {
     font-weight: bold;
 }
 
-.eventos-branco i {
+.eventos-branco i{
     display: grid;
     position: relative;
     margin: 10px 0 0 300px;
@@ -318,16 +282,7 @@ h2 {
     font-size: 50px;
 }
 
-#container-not-um img {
-    position: relative;
-    width: 25%;
-    margin: 0 0 0 0;
-    float: left;
-}
-
-
-
-#caixa-noticia {
+#caixa-noticia{
     position: relative;
     display: grid;
     max-width: 80%;
@@ -339,9 +294,7 @@ h2 {
     border-radius: 10px 10px 10px 10px;
 }
 
-#container-not-um,
-#container-not-dois,
-#container-not-tres {
+#container-not-um, #container-not-dois, #container-not-tres{
     position: relative;
     margin: 30px 0 0 20px;
     width: 100%;
@@ -354,19 +307,17 @@ h2 {
     float: left;
 }
 
-#container-not-um img {
+#container-not-dois img{
     position: relative;
-    width: 80%;
-    margin-top: 20px;
-    margin-left: 1px;
+    width: 35%;
+    margin-top: 75px ;
     float: left;
 }
 
-#container-not-dois img {
+#container-not-tres img{
     position: relative;
-    width: 80%;
-    margin-top: 60px;
-    
+    width: 35%;
+    margin-top: 45px ;
     float: left;
 }
 
@@ -382,17 +333,15 @@ h2 {
 }
 
 
-.container-not-um,
-.container-not-dois,
-.container-not-tres {
+.container-not-um, .container-not-dois, .container-not-tres{
     position: relative;
     color: var(--clr-font);
-    width: 600px;
+    width: 510px;
     height: 100%;
     margin-left: 250px;
 }
 
-#newslater {
+#newslater{
     position: relative;
     background-color: #010F37;
     width: 350px;
@@ -405,19 +354,19 @@ h2 {
     box-shadow:0px 0px 74px 0px #1100ff;
 }
 
-#newslater i {
+#newslater i{
     position: relative;
     margin: 50px 15px 0 34px;
     font-size: 45px;
     float: left;
 }
 
-#newslater h2 {
+#newslater h2{
     position: relative;
     font-size: 30px;
 }
 
-fieldset {
+fieldset{
     position: relative;
     width: 90%;
     height: auto;
@@ -426,7 +375,7 @@ fieldset {
     font-size: 25px;
 }
 
-#email {
+#email{
     position: relative;
     height: 40px;
     width: 300px;
@@ -439,7 +388,7 @@ fieldset {
     color: #fff;
 }
 
-#botao {
+#botao{
     position: relative;
     height: 30px;
     width: 150px;
@@ -648,5 +597,3 @@ a,
 
 
 }
-
-
