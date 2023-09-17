@@ -12,16 +12,28 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/e2a8d0d6fc.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script class="vlibras" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
     <!-- HEADER -->
     <header>
         <div class="caixa-esquerda">
             <a href="index.html" id="logo">
-                <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="">
+                <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="logo do yu gi oh!">
             </a>
         </div>
 
@@ -49,37 +61,38 @@
         <section id="carroselsup">
             <div class="wrap">
                 <div class="slider">
-
+                    <!--add descrição no alt de todos os videos/imagens-->
                     <div class="item">
-                        <img src="img/background/zyro-image.png"
+                        <video>
+                            <source scr="" type="video/mp4">  <!--codigo para inserir o video-->
+                        </video>
+                    </div>
+                    <div class="item">
+                        <img src="img/background/jadendragaoarcoiru2.jpg"
                             alt="">
                     </div>
                     <div class="item">
-                        <img src="img/background/zyro-image1.png"
+                        <img src="img/background/cavaleirosduelistas3.jpg"
                             alt="">
                     </div>
                     <div class="item">
-                        <img src="img/background/carouselgx.webp"
+                        <img src="img/background/yugieutopia4.jpg"
                             alt="">
                     </div>
                     <div class="item">
-                        <img src="img/background/zyro-image3.png"
+                        <img src="img/background/yuyaandoddeyes5.png"
                             alt="">
                     </div>
                     <div class="item">
-                        <img src="img/background/zyro-image4.png"
+                        <img src="img/background/dragonblackeyesred1.jpg"
                             alt="">
                     </div>
                     <div class="item">
-                        <img src="img/background/carouselarcv.jpg"
+                        <img src="img/background/carouselseries1.jpg"
                             alt="">
                     </div>
                     <div class="item">
-                        <img src="img/background/carousel5ds.webp"
-                            alt="">
-                    </div>
-                    <div class="item">
-                        <img src="img/background/carouselyugioh.jpg"
+                        <img src="img/background/yugiejoeyvstheparadox.jpg"
                             alt="">
                     </div>
 
@@ -92,48 +105,48 @@
             <a href="yugioh.html" alt="Yu-Gi-Oh" target="_blank">
                 <div class="card">
                     <div class="wrapper">
-                        <img src="img/background/background-egyptian.jpg" class="cover-image" />
+                        <img src="img/background/background-egyptian.jpg" class="cover-image" alt="clique aqui para mais informações sobre a primeira temporada de yu gi oh" />
                     </div>
-                    <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" class="title" />
-                    <img src="img/personagem/yugi-yugioh.png" class="character" />
+                    <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" class="title" alt="clique aqui para mais informações sobre a primeira temporada de yu gi oh"/>
+                    <img src="img/personagem/yugi-yugioh.png" class="character" alt="clique aqui para mais informações sobre a primeira temporada de yu gi oh" />
                 </div>
             </a>
 
             <a href="yugioh-gx.html" alt="Mythrill" target="_blank">
                 <div class="card">
                     <div class="wrapper">
-                        <img src="img/background/background-yugiog-gx.jpg" class="cover-image" />
+                        <img src="img/background/background-yugiog-gx.jpg" class="cover-image" alt="clique aqui para mais informações da temporada yu gi oh gx" />
                     </div>
-                    <img src="img/GX_logo.webp" class="title" />
-                    <img src="img/personagem/yugioh-gx/jaden-yugioh-gx.png" class="character" />
+                    <img src="img/GX_logo.webp" class="title" alt="clique aqui para mais informações da temporada yu gi oh gx"/>
+                    <img src="img/personagem/yugioh-gx/jaden-yugioh-gx.png" class="character" alt="clique aqui para mais informações da temporada yu gi oh gx" />
                 </div>
             </a>
             <a href="yugioh-5ds.html" alt="Yu-Gi-Oh-Arc-5ds" target="_blank">
                 <div class="card">
                     <div class="wrapper">
-                        <img src="img/background/background-5ds.jpg" class="cover-image" />
+                        <img src="img/background/background-5ds.jpg" class="cover-image" alt="clique aqui para mais informações da temporada yu gi oh 5ds"/>
                     </div>
-                    <img src="img/yu-gi-oh-5ds.webp" class="title" />
-                    <img src="img/personagem/yugioh-5ds/yusei-l.png" class="character" />
+                    <img src="img/yu-gi-oh-5ds.webp" class="title" alt="clique aqui para mais informações da temporada yu gi oh 5ds"/>
+                    <img src="img/personagem/yugioh-5ds/yusei-l.png" class="character" alt="clique aqui para mais informações da temporada yu gi oh 5ds" />
                 </div>
             </a>
-            <a href="yugioh-zexal.html" alt="Yu-Gi-Oh-Zexal" target="_blank">
+            <a href="yugioh-zexal.html" alt="Yu-Gi-Oh-Zexal" target="_blank" >
                 <div class="card">
                     <div class="wrapper">
-                        <img src="img/background/background-zexal.png" class="cover-image" />
+                        <img src="img/background/background-zexal.png" class="cover-image" alt="clique aqui para mais informações da temporada yu gi oh zexal" />
                     </div>
-                    <img src="img/Yu-Gi-Oh!_ZEXAL_HQ_Logo.webp" class="title" />
-                    <img src="img/personagem/yugioh-zexal/yuma-l.png" class="character" />
+                    <img src="img/Yu-Gi-Oh!_ZEXAL_HQ_Logo.webp" class="title" alt="clique aqui para mais informações da temporada yu gi oh zexal" />
+                    <img src="img/personagem/yugioh-zexal/yuma-l.png" class="character" alt="clique aqui para mais informações da temporada yu gi oh zexal"/>
                 </div>
             </a>
 
             <a href="yugioh-arc-v.html" alt="Yu-Gi-Oh-Arc-V" target="_blank">
                 <div class="card">
                     <div class="wrapper">
-                        <img src="img/background/background-arcV.jpg" class="cover-image" />
+                        <img src="img/background/background-arcV.jpg" class="cover-image" alt="clique aqui para mais informações da htemporada yu gi oh arc V"/>
                     </div>
-                    <img src="img/Arc-V-logo.webp" class="title" />
-                    <img src="img/personagem/yugioh-arcV/yuya.png" class="character" />
+                    <img src="img/Arc-V-logo.webp" class="title" alt="clique aqui para mais informações da htemporada yu gi oh arc V" />
+                    <img src="img/personagem/yugioh-arcV/yuya.png" class="character" alt="clique aqui para mais informações da htemporada yu gi oh arc V"/>
                 </div>
             </a>
         </section>
@@ -141,88 +154,105 @@
 
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <section class="footer-left-container">
-            <div class="footer-left-title-container">
-                <h3>
-                    YU-GI-UNIVERSE
-                </h3>
-            </div>
-            <div class="footer-left-image">
-                <img src="img/logo-destaque-Yu-Gi-Oh!.png" alt="Logo de Yu-Gi-Oh" width="250px" height="90px">
-            </div>
-        </section>
+     <!--FOOTER-->
+     <footer>
+        <div class="footer-content">
+            <section class="footer-left-container">
+                <div class="footer-left-title-container">
+                    <h3 class="footer-left-title">
+                        YU-GI-UNIVERSE
+                    </h3>
 
-        <section class="footer-middle-container">
-            <div class="link-container">
-                <ul class="footer-list">
-                    <li class="list-items">
-                        <a href="#" class="list-links">
-                            <span class="list-names">
-                                LINKS
-                            </span>
+                    <div class="footer-left-image">
+                        <a href="#" class="footer-image">
+                            <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="Logo de Yu-Gi-Oh">
                         </a>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-items">
-                        <a href="#" class="list-links">
-                            <span class="list-names">
-                                INICIO
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-items">
-                        <a href="#" class="list-links">
-                            <span class="list-names">
-                                EVENTOS
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="list-items">
-                        <a href="#" class="list-links">
-                            <span class="list-names">
-                                SERIES
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                    </div>
+                </div>
+            </section>
 
-        <section class="footer-right-container">
-            <div class="follow-us-container">
-                <h2 class="follow-us-title">
-                    SIGA-NOS
-                </h2>
-            </div>
-            <div class="social-icons-container">
-                <ul class="social-list">
-                    <li class="social-icon-container">
-                        <a href="#" class="icon-link">
-                            <i class="bi bi-whatsapp"></i>
-                        </a>
-                    </li>
-                    <li class="social-icon-container">
-                        <a href="#" class="icon-link">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="social-icon-container">
-                        <a href="#" class="icon-link">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </li>
+            <section class="footer-middle-container">
+                <div class="link-container">
+                    <ul class="footer-list">
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    LINKS
+                                </span>
+                            </a>
+                        </li>
 
-                </ul>
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    INICIO
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    EVENTOS
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="list-items">
+                            <a href="#" class="list-links">
+                                <span class="list-names">
+                                    SERIES
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer-right-container">
+                <div class="footer-right-content-container">
+                    <div class="follow-us-container">
+                        <h2 class="follow-us-title">
+                            SIGA-NOS
+                        </h2>
+                    </div>
+
+                    <div class="social-icons-container">
+                        <ul class="social-list">
+                            <li class="social-icon-container">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li class="social-icon-container">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-icon-container">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="copyright-container">
+            <div class="copyright-title">
+                <h4>
+                    © Desenvolvido por CodigoGeek
+                </h4>
             </div>
-        </section>
+            <p class="copyright-text">
+                Yu-Gi-Oh! é uma marca registrada de Kazuki Takahashi, Konami © 1996-2023.
+            </p>
+        </div>
+        
     </footer>
+
 
 </body>
 
