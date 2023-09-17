@@ -22,7 +22,6 @@ body {
 }
 
 header{
-    
     max-width: 80%;
     height: 70px;
     background-color: var(--clr-header);
@@ -73,9 +72,10 @@ header{
     transition: all 0.5s;
 }
 
+
+
 /* caixa inicio menu */
 #fundo{
-    position: relative;
     max-width: 80%;
     height: 542px;
     background-image: url(../img/background/background-space.jpg);
@@ -95,15 +95,11 @@ header{
     border-radius: 2%;
     margin: 90px auto;
     display: flex;
-    
 }
 
+
+
 /* carrucel home */
-
-
-
-
-
 
 .controls {
     width: 32px;
@@ -118,7 +114,7 @@ header{
 }
 
 .right {
-    margin-left: 1100px;
+    margin-left: 1080px;
     margin-top: -30px;
 }
 
@@ -145,16 +141,10 @@ header{
     height: 400px;
     float: left;
     margin-left: 15px;
-    background-color: #0368ff;
-    color: #fff;
-    font-size: 40px;
-    text-align: center;
-    
-    border-radius: 5px;
     cursor: pointer;
-  transition: 1s all;
-    /*box-shadow: 0 9px 10px rgba(6,6,7,.3);*/
+    transition: 1s all;
 }
+
 .cont {
     position: absolute;
     width: 1050px;
@@ -174,19 +164,6 @@ header{
 .item:hover {
     margin-top: -5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* fim carroucel */
@@ -247,7 +224,7 @@ header{
 h2{
     position: relative;
     color: #fff ;
-    margin-top: 130px;
+    margin-top: 50px;
     text-align: center;
     font-size: 50px;
 }
@@ -272,14 +249,13 @@ h2{
     height: 40%;
     border-radius: 10px;
     z-index: 2;
-    margin: 230px 200px 30px 200px;
 }
 
 .eventos-branco p{
     display: grid;
     position: relative;
-    margin: 45px 0 20px 50px;
-    font-size: 30px;
+    margin: 45px 0 30px 50px;
+    
 }
 
 .eventos-branco i{
@@ -293,8 +269,7 @@ h3{
     position: relative;
     color: #FFF;
     margin: 0 0 20px 165px;
-    
-    font-size: 45px;
+    font-size: 50px;
 }
 
 #caixa-noticia{
@@ -354,14 +329,11 @@ h3{
     text-align: justify; 
     font-size: 28px;
     margin-left: 250px;
-    
-   
-    
 }
 
 #newslater{
     position: relative;
-    background-color: var(--clr-elements);
+    background-color: #010F37;
     width: 350px;
     height: 350px;
     margin: 0 0 0 110px;
@@ -389,25 +361,35 @@ fieldset{
     height: auto;
     margin: auto;
     margin: 50px auto;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 #email{
     position: relative;
     height: 40px;
     width: 300px;
-    border-radius: 15px;
-    margin: 20px 0 0 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    opacity: 0.80;
+}
 
+.email{
+    color: #fff;
 }
 
 #botao{
     position: relative;
     height: 30px;
-    width: 300px;
-    margin: 30px 0 0 10px;
-    border-radius: 15px;
-    background-color: var(--clr-bg)
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
     
 }
 

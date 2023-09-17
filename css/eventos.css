@@ -330,9 +330,8 @@ button.ghost {
 }
 
 form {
-    background-image: url(../img/background/background-eventos-formulario.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #010F37;
+    
     display: flex;
     border-radius: 10px;
     justify-content: center;
@@ -351,6 +350,7 @@ form {
     position: relative;
     width: 163vh;
     height: 280vh;
+    
 }
 
 .form-container {
