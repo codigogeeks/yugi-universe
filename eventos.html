@@ -19,7 +19,6 @@
             </a>
         </div>
 
-
         <ul class="caixa-direita" id="menu">
             <li>
                 <a href="index.html" class="anchor-header">INICIO</a>
@@ -31,7 +30,7 @@
                 <a href="series.html" class="anchor-header">SERIES</a>
             </li>
             <li>
-                <a href="#4" class="anchor-header">CONTATO</a>
+                <a href="contato.html" class="anchor-header">CONTATO</a>
             </li>
         </ul>
     </header>
@@ -40,7 +39,7 @@
         <!--IMAGEM DO FUNDO-->
         <section class="header">
             <div class="imagem-nos">
-               <img src="img/background/atropa.png" alt="">
+                <img src="img/background/atropa.png" alt="">
             </div>
         </section>
 
@@ -88,37 +87,41 @@
         <section id="forms">
             <div class="formulario" id="formulario">
                 <div class="form-container sign-up-container">
-                    <form action="#">
+                    <form>
                         <h1>Criar Conta</h1>
 
-                        <label class="form-label">Nome </label>
+                        <label class="form-label"></label>
                         <input id="name" type="text" required placeholder="digite seu nome" />
-                        <label class="form-label">E-mail </label>
+                        <label class="form-label"></label>
                         <input id="email" type="email" required placeholder="digite seu e-mail" />
-                        <label class="form-label">Senha</label>
+                        <label class="form-label"></label>
                         <input id="senha" type="password" required placeholder="digite sua senha" />
-                        <label class="form-label">Data</label>
-                        <input id="data" type="date" name="date"/>
-                        
-                        <button class="entrar" type="submit">Inscreva-se</button>
+                        <label class="form-label"></label>
+                        <input id="data" type="date" name="date" />
+                        <label class="form-label">Cep:</label>
+                        <input name="cep" type="text" id="cep" value="" size="60" maxlength="9"
+                            placeholder="digite seu cep" onblur="pesquisacep(this.value);" />
+                        <label class="form-label">Rua:</label>
+                        <input name="rua" type="text" id="rua" size="60" placeholder="digite sua rua" />
+                        <button class="entrar" type="submit" onclick="Evento()">Inscreva-se</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
                     <form action="#">
                         <h1>Entrar</h1>
-                        <label class="form-label">E-mail </label>
+                        <label class="form-label"></label>
                         <input id="email" type="email" required placeholder="digite seu e-mail" />
-                        <label class="form-label">Senha</label>
+                        <label class="form-label"></label>
                         <input id="senha" type="password" required placeholder="digite sua senha" />
                         <a id="esqueceu" href="#">Esqueceu a senha?</a>
-                        <button class="entrar" type="submit">Entrar</button>
+                        <button class="entrar" type="submit" onclick="Evento()">Entrar</button>
                     </form>
                 </div>
                 <div class="overlay-container">
                     <div class="overlay">
                         <div class="overlay-panel overlay-left">
                             <h1 class="bem-vindo">Bem vindo de volta!</h1>
-                            <p class="texto">Para se manter conectado conosco, faça login com seus dados pessoais</p>
+                            <p class="texto">Para manter-se conectado conosco, faça login com seus dados pessoais</p>
                             <button class="ghost" id="signIn" type="submit">Inscreva-se</button>
                         </div>
                         <div class="overlay-panel overlay-right">
@@ -131,9 +134,11 @@
             </div>
         </section>
 
-        <section>
+        <section id="formulario-mobile">
             <fieldset class="angry-grid">
-                <article id="item-0">&nbsp;</article>
+                <article id="item-0"><img src="img/background/background-eventos-formulario.png"></article>
+                <article id="imagem-responsivo-formulario"><img src="img/background/formulario-responsivo.png">
+                </article>
             </fieldset>
         </section>
     </main>
@@ -234,7 +239,7 @@
                 Yu-Gi-Oh! é uma marca registrada de Kazuki Takahashi, Konami © 1996-2023.
             </p>
         </div>
-        
+
     </footer>
 
     <!--SCRIPT DO FORMULARIO-->
