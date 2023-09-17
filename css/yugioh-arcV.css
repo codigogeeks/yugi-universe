@@ -34,8 +34,22 @@ header {
     margin-top: 30px;
 }
 
+h1, p {
+    color: var(--clr-font);
+}
+
+h1 {
+    background-color: #85784b;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: clamp(1.5em,2.5em,3em);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
 p {
-    font-family: verdana;
+    font-size: clamp(1rem, 2vw, 2rem);;
+    padding: 20px;
 }
 
 .caixa-esquerda,
@@ -121,12 +135,12 @@ a {
 
 .caixa1 {
     position: relative;
-    min-width: 50%;
+    width: 50%;
     min-height: 65vh;
     margin: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /*justify-content: center;
+    align-items: center; */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -199,9 +213,6 @@ a {
     }
 }
 
-h1{
-    color: #fff;
-}
 
 .caixa1 span:last-of-type{
     position: absolute;
@@ -222,13 +233,21 @@ h1{
     }
 }
 
- /*#dois {
- background-color: #bf2a2a;
-} */ 
+.descricao-personagens {
+
+    
+    padding: 30px;
+}
 
 
 
 @media screen and (max-width: 800px) {
+
+    p {
+        font-size: clamp(1rem, 0.8vw, 2rem);;
+        padding: 3px;
+    }
+
     .containerFormatacao {
         height: 140vh;
         display: flex;
