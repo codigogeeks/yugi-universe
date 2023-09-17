@@ -17,3 +17,11 @@ document.getElementById("r").addEventListener("click", function(){
     if (x < confr){x = 350}else{
     document.getElementById("move").style.marginLeft = x + "px";}
 });
+
+
+
+
+
+
+
+
