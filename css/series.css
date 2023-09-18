@@ -230,7 +230,7 @@ a p{ /*edição do paragrafo cards*/
 }
 
 .card {
-  width: min(400px, 70vw);
+  width: min(400px, 80vw);
   height: min(380px, 70vh);
   position: relative;
   display: flex;

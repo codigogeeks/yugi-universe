@@ -186,11 +186,10 @@ header {
   }
 }   
 
-/* footer */
-
+/* FOOTER */
 footer {
   margin: 0 auto 10vh auto;
-  max-width: 90%;
+  max-width: 80%;
   background: url(../img/background/background-space.jpg) center center no-repeat;
   background-size: cover;
   background-color: #fff;
@@ -282,10 +281,13 @@ a,
   justify-content: space-between;
 }
 
-.list-links .list-names,
+.list-links,
+.list-names,
 .list-links,
 .icon-link {
   margin: 0;
+  font-size: 30px;
+
 }
 
 .list-names,
@@ -322,7 +324,7 @@ a,
   padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.copyright-text{
+.copyright-text {
   margin-top: 1rem;
 }
 

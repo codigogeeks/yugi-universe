@@ -372,10 +372,13 @@ a,
     justify-content: space-between;
 }
 
-.list-links .list-names,
+.list-links,
+.list-names,
 .list-links,
 .icon-link {
     margin: 0;
+    font-size: 30px;
+
 }
 
 .list-names,
@@ -412,7 +415,7 @@ a,
     padding: 1rem 1rem 1.5rem 1rem;
 }
 
-.copyright-text{
+.copyright-text {
     margin-top: 1rem;
 }
 
@@ -422,7 +425,6 @@ a,
     font-size: clamp(1rem, 1vw, 2rem);
     text-align: center;
 }
-
 
 /* Responsividade das telas*/
 
