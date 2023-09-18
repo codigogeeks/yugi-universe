@@ -84,8 +84,7 @@ header {
   flex-wrap: wrap;
   padding: 2em;
   text-align: center;
-  width: 85%;
-  margin-left: 110px;
+  justify-content: center;
 }
 
 .column {
@@ -143,7 +142,7 @@ header {
 }
 
 .icons {
-  width: 40%;
+  width: 25%;
   min-width: 100px;
   margin: auto;
   display: flex;
