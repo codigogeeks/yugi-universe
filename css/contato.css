@@ -129,6 +129,11 @@ header {
 
 .card .nome {
   font-weight: 500;
+  font-size: 30px;
+}
+
+.card .texto{
+  font-size: 20px;
 }
 
 .card p {
