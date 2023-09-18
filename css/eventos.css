@@ -118,7 +118,7 @@ header {
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 2em;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .card {
@@ -328,15 +328,15 @@ button.ghost {
 }
 
 .entrar {
-    width: 80%;
-    margin-left: 10%;
+    width: 200px;
+    margin-left: 150px;
     cursor: pointer;
 }
 
 form {
     background-color: #8A3030;
     display: flex;
-    border-radius: 10px;
+    border-radius: 2.5px;
     justify-content: center;
     flex-direction: column;
     padding: 0 50px;
@@ -349,7 +349,7 @@ form {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 5px;
+    border-radius: 2.5px;
     margin-top: 60px;
     position: relative;
     width: 80%;
@@ -615,40 +615,33 @@ a,
     font-size: 2.5rem;
 }
 
-.copyright-container {
-    width: 100%;
-    border-top: 2px solid var(--clr-font);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem 1rem 1.5rem 1rem;
-}
-
-.copyright-text{
-    margin-top: 1rem;
-}
-
-.copyright-title,
-.copyright-text {
-    color: var(--clr-font);
-    font-size: clamp(1rem, 1vw, 2rem);
-    text-align: center;
-}
-
-/* TESTE */
-/* 
-    .article {
-        display: none;
-    }
-   
-    #item-0 {
-        display: none;
+    .copyright-container {
+        width: 100%;
+        border-top: 2px solid var(--clr-font);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 1rem 1.5rem 1rem;
     }
 
-    #imagem-responsivo-formulario img{
-        display: none;
-    } */
+    .copyright-text{
+        margin-top: 1rem;
+    }
+
+    .copyright-title,
+    .copyright-text {
+        color: var(--clr-font);
+        font-size: clamp(1rem, 1vw, 2rem);
+        text-align: center;
+    }
+
+
+    #imagem-responsivo-formulario{
+        background-image: url(../img/background/formulario-responsivo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    } 
 
 /* DESKTOP */
 @media screen and (max-width: 1920px) {
@@ -689,6 +682,11 @@ a,
     .header{
         height: 500px;
     }
+
+    .entrar{
+        width: 200px;
+        margin-left: 5px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -710,8 +708,12 @@ a,
         height: 400px;
     }
 
-}
+    .entrar{
+        width: 200px;
+        margin-left: 5px;
+    }
 
+}
 
 /* TABLET */
 
@@ -734,6 +736,10 @@ a,
         height: 380px;
     }
 
+    .entrar{
+        width: 200px;
+        margin-left: 10px;
+    }
 
 }
 
@@ -754,6 +760,7 @@ a,
     
     .footer-content {
         flex-direction: column;
+        margin-top: 30px;
     }
     
     .footer-left-container{
@@ -787,20 +794,14 @@ a,
         justify-content: space-around;
     }
 
-    .entrar{
-        width: 120px;
-        margin-left: 25px;
-    }
-    
     .imagem-nos img{
-        width: 250vh;
-        height: 200px;
-        margin-top: 40px;
-        margin: auto;
+        width: 300px;
+        height: 230px;
+        margin-top: 10px;
     }
 
     .header{
-        height: 400px;
+        height: 300px;
     }
 
     .formulario{
@@ -811,17 +812,23 @@ a,
         display: none;
     }
 
-    #imagem-responsivo-formulario img{
-        visibility: visible;
-        
+    #item-0 img{
+        width: 380px;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 50px;
     }
+
+    #imagem-responsivo-formulario img{
+        width: 380px;
+        height: 300px;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
 }
 
-@media (min-width: 320px) and (max-width: 482px){
-    #imagem-responsivo-formulario img{
-        visibility: visible;
-    }
-
+@media (min-width: 320px) and (max-width: 480px){
     .formulario{
         display: none;
     }
@@ -830,8 +837,28 @@ a,
         display: none;
     }
 
+    .formulario-mobile{
+        display: block;
+    }
+
+    .angry-grid{
+        display: block;
+    }
+
+    #imagem-responsivo-formulario img{
+        width: 260px;
+        height: 400px;
+        margin: 5px 0px 0px 30px;
+    }
+
+    #item-0 img{
+        width: 260px;
+        height: 200px;
+        margin: 20px 0px 0px 30px;
+    }
+
     .imagem-nos img{
-        width: 300px;
+        width: 200px;
         height: 200px;
         margin-top: 40px;
     }
@@ -846,6 +873,7 @@ a,
     
     .footer-content {
         flex-direction: column;
+        margin-top: 30px;
     }
     
     .footer-left-container{
@@ -878,7 +906,5 @@ a,
         height: 100%;
         justify-content: space-around;
     }
-   
-
 }
 

@@ -498,25 +498,4 @@ a,
         justify-content: space-around;
     }
 
-    .entrar{
-        width: 120px;
-        margin-left: 25px;
-    }
-    
-    .imagem-nos{
-        width: 300vh;
-        height: 280px;
-        margin-top: 60px;
-        margin-left: 30px;
-    }
-
-    .header{
-        height: 400px;
-    }
-
-    .formulario{
-        display: none;
-    }
-
-
 }

@@ -138,9 +138,22 @@
             <fieldset class="angry-grid">
                 <article id="item-0">
                     <img src="img/background/background-eventos-formulario.png">
-                    <button>inscreva-se</button>
                 </article>
-                <article id="imagem-responsivo-formulario"><img src="img/background/formulario-responsivo.png">
+                <article id="imagem-responsivo-formulario">
+                        <label></label>
+                        <input id="name" type="text" required placeholder="digite seu nome" />
+                        <label></label>
+                        <input id="email" type="email" required placeholder="digite seu e-mail" />
+                        <label></label>
+                        <input id="senha" type="password" required placeholder="digite sua senha" />
+                        <label></label>
+                        <input id="data" type="date" name="date" />
+                        <label></label>
+                        <input name="cep" type="text" id="cep" value="" size="20" maxlength="9"
+                            placeholder="digite seu cep" onblur="pesquisacep(this.value);" />
+                        <label></label>
+                        <input name="rua" type="text" id="rua" size="20" placeholder="digite sua rua" />
+                        <button>Inscreva-se</button>
                 </article>
             </fieldset>
         </section>
