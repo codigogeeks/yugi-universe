@@ -12,10 +12,22 @@
 </head>
 
 <body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script class="vlibras" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <header>
         <div class="caixa-esquerda">
             <a href="index.html" id="logo">
-                <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="">
+                <img src="img/icones/logo-destaque-Yu-Gi-Oh!.png" alt="yu gi oh!">
             </a>
         </div>
 
@@ -39,7 +51,7 @@
         <!--IMAGEM DO FUNDO-->
         <section class="header">
             <div class="imagem-nos">
-                <img src="img/background/atropa.png" alt="">
+                <img src="img/background/atropa.png" alt="banner do proximo duelo do top quatro da word champions, masaaki vs takahiro, e rafael vs shuhei">
             </div>
         </section>
 
@@ -48,11 +60,11 @@
             <div class="card">
                 <div class="card1__inner">
                     <div class="card__face card__face--front">
-                        <img src="img/carta.jpg" alt="Carta Yu-Gi-Oh">
+                        <img src="img/carta.jpg" alt="Evento trials of the pharaoh">
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
-                            <img src="img/icones/CARTA-EVENTO.png">
+                            <img src="img/icones/CARTA-EVENTO.png" alt="Evento trials of the pharaoh">
                         </div>
                     </div>
                 </div>
@@ -60,11 +72,11 @@
             <div class="card">
                 <div class="card2__inner">
                     <div class="card__face card__face--front">
-                        <img src="img/carta.jpg" alt="Carta Yu-Gi-Oh">
+                        <img src="img/carta.jpg" alt="Evento speed duel gx: streets of battle city">
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
-                            <img src="img/icones/CARTA-EVENTO1.png">
+                            <img src="img/icones/CARTA-EVENTO1.png" alt="Evento speed duel gx: streets of battle city">
                         </div>
                     </div>
                 </div>
@@ -72,11 +84,11 @@
             <div class="card">
                 <div class="card3__inner">
                     <div class="card__face card__face--front">
-                        <img src="img/carta.jpg" alt="Carta Yu-Gi-Oh">
+                        <img src="img/carta.jpg" alt="Evento yu gi oh championship series">
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
-                            <img src="img/icones/CARTA-EVENTO2.png">
+                            <img src="img/icones/CARTA-EVENTO2.png" alt="Evento yu gi oh championship series">
                         </div>
                     </div>
                 </div>
@@ -140,20 +152,20 @@
                     <img src="img/background/background-eventos-formulario.png">
                 </article>
                 <article id="imagem-responsivo-formulario">
-                        <label></label>
-                        <input id="name" type="text" required placeholder="digite seu nome" />
-                        <label></label>
-                        <input id="email" type="email" required placeholder="digite seu e-mail" />
-                        <label></label>
-                        <input id="senha" type="password" required placeholder="digite sua senha" />
-                        <label></label>
-                        <input id="data" type="date" name="date" />
-                        <label></label>
-                        <input name="cep" type="text" id="cep" value="" size="20" maxlength="9"
-                            placeholder="digite seu cep" onblur="pesquisacep(this.value);" />
-                        <label></label>
-                        <input name="rua" type="text" id="rua" size="20" placeholder="digite sua rua" />
-                        <button>Inscreva-se</button>
+                    <label></label>
+                    <input id="name" type="text" required placeholder="digite seu nome" />
+                    <label></label>
+                    <input id="email" type="email" required placeholder="digite seu e-mail" />
+                    <label></label>
+                    <input id="senha" type="password" required placeholder="digite sua senha" />
+                    <label></label>
+                    <input id="data" type="date" name="date" />
+                    <label></label>
+                    <input name="cep" type="text" id="cep" value="" size="20" maxlength="9" placeholder="digite seu cep"
+                        onblur="pesquisacep(this.value);" />
+                    <label></label>
+                    <input name="rua" type="text" id="rua" size="20" placeholder="digite sua rua" />
+                    <button>Inscreva-se</button>
                 </article>
             </fieldset>
         </section>
