@@ -16,6 +16,18 @@
 </head>
 
 <body>
+    <!-- Vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script class="vlibras" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <header>
         <div class="caixa-esquerda">
             <a href="index.html" id="logo">
@@ -41,25 +53,49 @@
 
     <main>
         <section id="fundo">
-
             <!-- carroucel -->
-            <div class="carrousel">
-                <div class="tapa" id="move">
-                    <div class="item"><img src="img/cartas/Buraco Negro.jpg"></div>
-                    <div class="item"><img src="img/cartas/Caveira Invocada.jpg"></div>
-                    <div class="item"><img src="img/cartas/Castor Guerreiro.jpg"></div>
-                    <div class="item"><img src="img/cartas/Dragão Branco de Olhos Azuis.jpg"></div>
-                    <div class="item"><img src="img/cartas/Dragão Definitivo de Olhos Azuis.jpg"></div>
-                    <div class="item"><img src="img/cartas/Dragão Negro de Olhos Vermelhos.jpg"></div>
-                    <div class="item"><img src="img/cartas/Espadas da Luz Reveladora.jpg"></div>
+            <div class="carrossel p-3 mt-5 teste">
+                <div class="carrossel-container pt-5">
+              
+                    <div class="carrossel-item">
+                        <div class="card-carrossel p-4 d-flex justify-content-between flex-column">
+                            <img src="img/cartas/Buraco Negro.jpg" alt="carrossel de cartas raras, buraco negro">
+                        </div>
+                    </div>
+                   
+                    <div class="carrossel-item">
+                        <div class="card-carrossel p-4 d-flex justify-content-between flex-column">
+                            <img src="img/cartas/Castor Guerreiro.jpg" alt="carrossel de cartas raras, castor guerreiro">
+                        </div>
+                    </div>
+                    
+                    <div class="carrossel-item">
+                        <div class="card-carrossel p-4 d-flex justify-content-between flex-column">
+                            <img src="img/cartas/Caveira Invocada.jpg" alt="carrossel de cartas raras, caveira invocada">
+                        </div>
+                    </div>
+                   
+                    <div class="carrossel-item">
+                        <div class="card-carrossel p-4 d-flex justify-content-between flex-column">
+                            <img src="img/cartas/Dragão Branco de Olhos Azuis.jpg" alt="carrossel de cartas raras, dragão branco de olhos azuis">
+                        </div>
+                    </div>
+               
+                    <div class="carrossel-item">
+                        <div class="card-carrossel p-4 d-flex justify-content-between flex-column">
+                            <img src="img/cartas/Dragão Definitivo de Olhos Azuis.jpg" alt="carrossel de cartas raras, dragão definitivo de olhos azuis">
+                        </div>
+                    </div>
+               
+                    <div class="carrossel-item">
+                        <div class="card-carrossel p-4 d-flex justify-content-between flex-column">
+                            <img src="img/cartas/Espadas da Luz Reveladora.jpg" alt="carrossel de cartas raras, espada da luz reveladora">
+                        </div>
+                    </div> 
                 </div>
-                <!-- controls -->
-                <div class="cont">
-                    <div class="left controls" id="l"><img src="img/setaD.png"></div>
-                    <div class="right controls" id="r"><img src="img/setaE.png"></div>
-                </div>
+            
+                <div class="carrossel-controls"></div>
             </div>
-            <!-- fim carroucel -->
 
         </section>
 
@@ -73,7 +109,7 @@
         <section id="eventos">
             <div class="eventos-branco">
                 <p>Campeonatos</p>
-                <a href="eventos.html"><i class="fa-solid fa-right-to-bracket" style="color: #000000;"></i></a>
+                <a href="eventos.html"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #000;"></i></a>
             </div>
         </section>
 

@@ -26,7 +26,7 @@ body{
 /* header */
 
 header {
-  max-width: 80%;
+  max-width: 90%;
   height: 70px;
   background-color: var(--clr-header);
   display: flex;
@@ -190,7 +190,7 @@ header {
 
 footer {
   margin: 0 auto 10vh auto;
-  max-width: 80%;
+  max-width: 90%;
   background: url(../img/background/background-space.jpg) center center no-repeat;
   background-size: cover;
   background-color: #fff;
