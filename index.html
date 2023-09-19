@@ -109,8 +109,6 @@
         <img class="flutuante2" src="img/carta.jpg" alt="">
         <img class="flutuante3" src="img/carta.jpg" alt=""> -->
 
-        <h2>EVENTOS</h2>
-
         <section id="eventos">
             <a href="yugioh.html" alt="Yu-Gi-Oh" class="card-container">
                 <div class="card">
@@ -121,65 +119,78 @@
                     <img src="img/icones/world-champioship.png" class="title">
                     <img src="img/personagem/jade-yuki-yugiog-gx.png" class="character" />
                 </div>
-                <div class="card-desc-container">
-                    <span class="card-desc">
-                        Campeonatos!
-                    </span>
-
-                </div>
             </a>
         </section>
 
-        <div class="title-noticias-container">
-            <h3 class="title-noticias">Notícias</h3>
-        </div>
-
-        <section id="caixa-noticia">
-            <div id="container-not-um">
-                <a href="https://www.yugioh-card.com/en/news/2023-ygo-national-championships/" target="_blank"><img
-                        src="img/icones/2023-wcq-NATIONAL_180.png" alt=""></a>
-                <article class="container-not-um">
-                    <h4>O caminho para Yu-Gi-Oh! <br>O Campeonato Mundial 2023 continua!</h4>
-                    <p>Os campeonatos nacionais de Yu-Gi-Oh 2023, começam em maio, com milhares de duelistas competindo
-                        pela américa latina.</p>
-                </article>
+        <section class="noticias-container">
+            <div id="newsletter">
+                <h2 class="newsletter-title">Inscreva-se na nossa newsletter</h2>
+                <form class="forms-container">
+                    <fieldset class="form-field">
+                        <label class="email">E-mail</label>
+                        <input id="email" type="email" required placeholder="Digite seu e-mail">
+                        <i class="fa-regular fa-envelope" style="color: #fff;"></i>
+                    </fieldset>
+                    <button id="botao" type="submit" onclick="Evento()" href="#">ENVIAR</button>
+                </form>
             </div>
 
-            <div id="container-not-dois">
-                <a href="https://www.yugioh-card.com/en/news/announcing-the-dragon-duel-championship/"
-                    target="_blank"><img src="img/icones/TCG_logo_70h.png" alt=""></a>
-                <article class="container-not-dois">
-                    <h4>Anunciando o Campeonato Dragon Duel!</h4>
-                    <p>Muita coisa mudou no mundo. Também estamos fazendo mudanças enquanto trabalhamos para oferecer as
-                        melhores experiências de Jogo Organizado para nossos Duelistas na América do Norte e Latina.</p>
-                </article>
-            </div>
+            <div class="noticias">
+                <div class="not-container">
+                    <a href="https://www.yugioh-card.com/en/news/2023-ygo-national-championships/" target="_blank"
+                        class="not-img-container">
+                        <img src="img/icones/2023-wcq-NATIONAL_400.png"
+                            alt="Logo do qualificatório nacional para o campeonato mundial de Yu-Gi-Oh">
+                    </a>
+                    <article class="not-desc">
+                        <h4 class="desc-title">
+                            O caminho para Yu-Gi-Oh!
+                            <br>
+                            O Campeonato Mundial 2023 continua!
+                        </h4>
+                        <p class="desc-text">
+                            Os campeonatos nacionais de Yu-Gi-Oh 2023, começam em maio, com milhares de duelistas
+                            competindo
+                            pela américa latina.
+                        </p>
+                    </article>
+                </div>
 
-            <div id="container-not-tres">
-                <a href="https://www.yugioh-card.com/en/news/world-championship-2023/" target="_blank"><img
-                        src="img/icones/WCS2023_logo_180.png" alt=""></a>
-                <article class="container-not-tres">
-                    <h4>Konami anuncia o retorno do Yu-Gi-Oh! Campeonato Mundial para 2023</h4>
-                    <p>A Konami Digital Entertainment Inc., tem o prazer de anunciar seus planos de realizar o Yu-Gi-Oh!
-                        Campeonato Mundial 2023, para determinar os melhores duelistas do mundo.</p>
-                </article>
+                <div class="not-container">
+                    <a href="https://www.yugioh-card.com/en/news/announcing-the-dragon-duel-championship/"
+                        target="_blank" class="not-img-container">
+                        <img src="img/icones/Yugioh-tcg.webp" alt="Logo do Yu-Gi-Oh Trading Card Game" />
+                    </a>
+                    <article class="not-desc">
+                        <h4 class="desc-title">
+                            Anunciando o Campeonato Dragon Duel!
+                        </h4>
+                        <p class="desc-text">
+                            Muita coisa mudou no mundo. Também estamos fazendo mudanças enquanto trabalhamos para
+                            oferecer as
+                            melhores experiências de Jogo Organizado para nossos Duelistas na América do Norte e Latina.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="not-container">
+                    <a href="https://www.yugioh-card.com/en/news/world-championship-2023/" target="_blank"
+                        class="not-img-container">
+                        <img src="img/icones/logo2.png" alt="Logo do campeonato mundial de Yu-Gi-Oh de 2023">
+                    </a>
+                    <article class="not-desc">
+                        <h4 class="desc-title">
+                            Konami anuncia o retorno do Campeonato Mundial para 2023
+                        </h4>
+                        <p class="desc-text">
+                            A Konami Digital Entertainment Inc., tem o prazer de anunciar seus planos de realizar o
+                            Yu-Gi-Oh!
+                            Campeonato Mundial 2023, para determinar os melhores duelistas do mundo.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
-
-        <div id="newslater">
-            <i class="fa-regular fa-envelope" style="color: #fff;"></i>
-            <h2>Se inscreva na nossa newslater</h2>
-
-            <form>
-                <fieldset>
-
-                    <label class="email">E-mail</label>
-                    <input id="email" type="email" required placeholder="Digite seu e-mail">
-
-                    <button id="botao" type="submit" onclick="Evento()" href="#">enviar</button>
-                </fieldset>
-            </form>
-        </div>
     </main>
 
     <!--FOOTER-->
@@ -203,14 +214,6 @@
                 <div class="link-container">
                     <ul class="footer-list">
                         <li class="list-items">
-                            <a href="#" class="list-links">
-                                <span class="list-names">
-                                    LINKS
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class="list-items">
                             <a href="index.html" class="list-links">
                                 <span class="list-names">
                                     INICIO
@@ -219,7 +222,7 @@
                         </li>
 
                         <li class="list-items">
-                            <a href="eventos.html" class="list-links">
+                            <a href="index.html" class="list-links">
                                 <span class="list-names">
                                     EVENTOS
                                 </span>
@@ -230,6 +233,14 @@
                             <a href="series.html" class="list-links">
                                 <span class="list-names">
                                     SERIES
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="list-items">
+                            <a href="contato.html" class="list-links">
+                                <span class="list-names">
+                                    CONTATO
                                 </span>
                             </a>
                         </li>
