@@ -34,7 +34,8 @@ header {
     margin-top: 30px;
 }
 
-h1, p {
+h1,
+p {
     color: var(--clr-font);
 }
 
@@ -42,13 +43,14 @@ h1 {
     background-color: #85784b;
     padding: 10px;
     margin-bottom: 10px;
-    font-size: clamp(1.5em,2.5em,3em);
+    font-size: clamp(1.5em, 2.5em, 3em);
     text-align: center;
     border-radius: 5px 5px 0 0;
 }
 
 p {
-    font-size: clamp(1rem, 2vw, 2rem);;
+    font-size: clamp(1rem, 2vw, 2rem);
+    ;
     padding: 20px;
 }
 
@@ -105,7 +107,7 @@ a {
     margin: 0 auto;
 }
 
-.overlay{
+.overlay {
     width: 100%;
     height: 542px;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
@@ -117,17 +119,17 @@ a {
 
 /* div responsável por ter a imagem do personagem*/
 #personagem-tela-principal {
-   width: 45%;
-   height: 542px;   
-   margin: auto;
+    width: 45%;
+    height: 542px;
+    margin: auto;
 }
 
 /* Ajuste do personagem a div que está dentro */
-#personagem-tela-principal img{
+#personagem-tela-principal img {
     width: 90%;
     height: 100%;
     margin: auto;
- }
+}
 
 #descricaoSerie {
     width: 45%;
@@ -138,7 +140,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    
+
     padding: 10px;
 }
 
@@ -194,7 +196,7 @@ a {
     border-radius: 50%;
 }
 
-.caixa1 span:first-of-type{
+.caixa1 span:first-of-type {
     position: absolute;
     top: 0;
     left: 0;
@@ -206,16 +208,17 @@ a {
 }
 
 /* Essa parte faz a animação da ciaxa que fara uma descrição dos personagens*/
-@keyframes animar1{
-    0%{
+@keyframes animar1 {
+    0% {
         transform: translateX(-100%);
     }
-    100%{
+
+    100% {
         transform: translateX(100%);
     }
 }
 
-.caixa1 span:nth-of-type(2){
+.caixa1 span:nth-of-type(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -225,16 +228,17 @@ a {
     animation: animar2 2s linear infinite;
 }
 
-@keyframes animar2{
-    0%{
+@keyframes animar2 {
+    0% {
         transform: translateY(-100%);
     }
-    100%{
+
+    100% {
         transform: translateY(100%);
     }
 }
 
-.caixa1 span:nth-of-type(3){
+.caixa1 span:nth-of-type(3) {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -245,17 +249,18 @@ a {
     animation-delay: 1s;
 }
 
-@keyframes animar3{
-    0%{
+@keyframes animar3 {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
 
-.caixa1 span:last-of-type{
+.caixa1 span:last-of-type {
     position: absolute;
     top: 0;
     left: 0;
@@ -265,11 +270,12 @@ a {
     animation: animar4 2s linear infinite;
 }
 
-@keyframes animar4{
-    0%{
+@keyframes animar4 {
+    0% {
         transform: translateY(100%);
     }
-    100%{
+
+    100% {
         transform: translateY(-100%);
     }
 }
@@ -386,7 +392,7 @@ a,
 .list-names,
 .footer-left-title,
 .follow-us-title {
-    font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.5rem);
 }
 
 .icon-link i {
@@ -424,9 +430,17 @@ a,
 .copyright-title,
 .copyright-text {
     color: var(--clr-font);
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     text-align: center;
 }
+
+.follow-us-title,
+.footer-left-title {
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+    font-weight: bold;
+}
+
+/* FIM DO FOOTER */
 
 .nav-bar {
     display: flex;
@@ -474,15 +488,15 @@ a,
 
 /* TABLET */
 @media only screen and (max-width: 767px) {
-    .fundo{
+    .fundo {
         flex-direction: column;
     }
-    
+
     .footer-content {
         flex-direction: column;
     }
-    
-    .footer-left-container{
+
+    .footer-left-container {
         height: auto;
         padding: 1rem;
     }
@@ -493,7 +507,7 @@ a,
         width: 100%;
     }
 
-    .footer-left-image{
+    .footer-left-image {
         margin-top: 1rem;
     }
 
@@ -503,12 +517,12 @@ a,
         padding: 0;
     }
 
-    .footer-right-container{
+    .footer-right-container {
         height: auto;
         padding-top: 1rem;
     }
 
-    .footer-right-content-container{
+    .footer-right-content-container {
         height: 100%;
         justify-content: space-around;
     }
@@ -518,56 +532,56 @@ a,
 
 /* Responsividade dos conteudos*/
 
-@media (min-width: 320px) and (max-width: 480px){
-    
+@media (min-width: 320px) and (max-width: 480px) {
+
     .tela-principal {
         width: 80%;
         height: 37vh;
     }
-    
-    .overlay{
+
+    .overlay {
         width: 100%;
         height: 37vh;
-    
+
         display: flex;
         flex-direction: column;
     }
-    
+
     /* div responsável por ter a imagem do personagem*/
     #personagem-tela-principal {
-       width: 50%;
-       height: 33vh;
-       margin-bottom: 0;
+        width: 50%;
+        height: 33vh;
+        margin-bottom: 0;
     }
-    
+
     /* Ajuste do personagem a div que está dentro */
-    #personagem-tela-principal img{
+    #personagem-tela-principal img {
         width: 100%;
         height: 100%;
     }
-    
+
     #descricaoSerie {
         display: none;
     }
-    
-    
+
+
     .containerFormatacao {
         min-width: 80%;
-    
+
         margin: 100px auto;
-    
+
         background-color: var(--clr-second-bg);
         border-radius: 50px 0 50px 0;
-    
+
         display: flex;
         flex-direction: column;
-    
+
         padding: 10px;
-    
+
         box-shadow: 0px 10px 100px #3B488F;
     }
-    
-    
+
+
     .caixa {
         width: 95%;
         height: 45vh;
@@ -576,7 +590,7 @@ a,
         align-items: center;
         justify-content: center;
     }
-    
+
     .caixa1 {
         position: relative;
         width: 95%;
@@ -586,7 +600,7 @@ a,
         overflow: hidden;
         border-radius: 10px;
     }
-    
+
     .caixa img {
         width: 75%;
         height: auto;
@@ -598,52 +612,53 @@ a,
 }
 
 /* Tablets */
-@media (min-width: 481px) and (max-width: 800px){
+@media (min-width: 481px) and (max-width: 800px) {
 
     .tela-principal {
         width: 80%;
         height: 50vh;
     }
-    
-    .overlay{
+
+    .overlay {
         width: 100%;
         height: 50vh;
-    
+
     }
-    
+
     /* div responsável por ter a imagem do personagem*/
     #personagem-tela-principal {
-       width: 50%;
-       height: 45vh;
-       margin-bottom: 0;
+        width: 50%;
+        height: 45vh;
+        margin-bottom: 0;
     }
-    
+
     /* Ajuste do personagem a div que está dentro */
-    #personagem-tela-principal img{
+    #personagem-tela-principal img {
         width: 95%;
         height: 100%;
     }
-    
+
     #descricaoSerie {
         height: 45vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         padding: 10px;
     }
-    
+
     #descricaoSerie img {
         width: 100%;
     }
 
-    
+
     .caixa1 {
         height: auto;
     }
 
     p {
-        font-size: clamp(1.5rem, 3vw, 2rem);;
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        ;
         padding: 20px;
     }
 }

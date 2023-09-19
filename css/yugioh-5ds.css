@@ -384,7 +384,7 @@ a,
 .list-names,
 .footer-left-title,
 .follow-us-title {
-    font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.5rem);
 }
 
 .icon-link i {
@@ -422,8 +422,14 @@ a,
 .copyright-title,
 .copyright-text {
     color: var(--clr-font);
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     text-align: center;
+}
+
+.follow-us-title,
+.footer-left-title {
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
+    font-weight: bold;
 }
 
 
@@ -431,41 +437,6 @@ a,
 @media only screen and (max-width: 767px) {
     .fundo{
         flex-direction: column;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-    }
-    
-    .footer-left-container{
-        height: auto;
-        padding: 1rem;
-    }
-
-    .footer-left-container,
-    .footer-middle-container,
-    .footer-right-container {
-        width: 100%;
-    }
-
-    .footer-left-image{
-        margin-top: 1rem;
-    }
-
-    .footer-right-content-container,
-    .footer-list,
-    .footer-left-title-container {
-        padding: 0;
-    }
-
-    .footer-right-container{
-        height: auto;
-        padding-top: 1rem;
-    }
-
-    .footer-right-content-container{
-        height: 100%;
-        justify-content: space-around;
     }
 
     .entrar{
@@ -626,3 +597,43 @@ a,
         padding: 20px;
     }
 }
+
+
+/* FOOTER NÃO MEXER */
+@media only screen and (max-width: 767px){
+    .footer-content {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+  
+    .footer-left-container {
+        height: auto;
+        padding: 1rem;
+    }
+  
+    .footer-left-container,
+    .footer-middle-container,
+    .footer-right-container {
+        width: 100%;
+    }
+  
+    .footer-left-image {
+        margin-top: 1rem;
+    }
+  
+    .footer-right-content-container,
+    .footer-list,
+    .footer-left-title-container {
+        padding: 0;
+    }
+  
+    .footer-right-container {
+        height: auto;
+        padding-top: 1rem;
+    }
+  
+    .footer-right-content-container {
+        height: 100%;
+        justify-content: space-around;
+    }
+  }
