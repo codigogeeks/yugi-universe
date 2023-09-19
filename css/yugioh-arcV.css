@@ -149,7 +149,7 @@ a {
 .containerFormatacao {
     width: 80%;
 
-    min-height: 70vh;
+    /* min-height: 70vh; */
 
     margin: 100px auto;
 
@@ -483,10 +483,9 @@ a,
     }
 
     .containerFormatacao {
-        height: 140vh;
+        /* height: 140vh; */
         display: flex;
         flex-direction: column;
-        
     }
 
     .caixa {
