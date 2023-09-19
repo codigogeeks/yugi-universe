@@ -275,8 +275,6 @@ a {
 }
 
 .descricao-personagens {
-
-    
     padding: 30px;
 }
 
@@ -473,33 +471,6 @@ a,
 }
 
 
-/* Responsividade das telas*/
-
-@media screen and (max-width: 800px) {
-
-    p {
-        font-size: clamp(1rem, 0.8vw, 2rem);;
-        padding: 3px;
-    }
-
-    .containerFormatacao {
-        /* height: 140vh; */
-        display: flex;
-        flex-direction: column;
-    }
-
-    .caixa {
-        width: 100%;
-        height: 65vh;
-        margin: auto 0;
-    }
-
-    .caixa1 {
-        width: 100%;
-        height: 65vh;
-        margin: auto 0;
-    }
-}
 
 /* TABLET */
 @media only screen and (max-width: 767px) {
@@ -544,51 +515,9 @@ a,
 
 }
 
-/* MENU HAMBURGUER DA GABS
-@media screen and (max-width: 730px) {
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
-}
-*/
 
 /* Responsividade dos conteudos*/
 
-/* Mobile */
 @media (min-width: 320px) and (max-width: 480px){
     
     .tela-principal {
@@ -632,7 +561,6 @@ a,
     
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
     
         padding: 10px;
     
@@ -669,5 +597,53 @@ a,
 
 }
 
-/* */
-@media (min-width: 320px) and (max-width: 480px){}
+/* Tablets */
+@media (min-width: 481px) and (max-width: 800px){
+
+    .tela-principal {
+        width: 80%;
+        height: 50vh;
+    }
+    
+    .overlay{
+        width: 100%;
+        height: 50vh;
+    
+    }
+    
+    /* div responsável por ter a imagem do personagem*/
+    #personagem-tela-principal {
+       width: 50%;
+       height: 45vh;
+       margin-bottom: 0;
+    }
+    
+    /* Ajuste do personagem a div que está dentro */
+    #personagem-tela-principal img{
+        width: 95%;
+        height: 100%;
+    }
+    
+    #descricaoSerie {
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 10px;
+    }
+    
+    #descricaoSerie img {
+        width: 100%;
+    }
+
+    
+    .caixa1 {
+        height: auto;
+    }
+
+    p {
+        font-size: clamp(1.5rem, 3vw, 2rem);;
+        padding: 20px;
+    }
+}
