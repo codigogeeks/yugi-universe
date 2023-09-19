@@ -118,7 +118,6 @@ header {
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 2em;
-    border-radius: 10px;
 }
 
 .card {
@@ -173,24 +172,6 @@ header {
 .card__content img {
     width: 100%;
     height: 100%;
-}
-
-.card__header {
-    position: relative;
-    padding: 30px 30px 40px;
-}
-
-.card__header:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
-    z-index: -1;
-    border-radius: 0px 0px 50% 0px;
 }
 
 .pp {
@@ -337,7 +318,6 @@ button.ghost {
 form {
     background-color: #8A3030;
     display: flex;
-    border-radius: 2.5px;
     justify-content: center;
     flex-direction: column;
     padding: 0 50px;
@@ -350,7 +330,6 @@ form {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 2.5px;
     margin-top: 60px;
     position: relative;
     width: 80%;
@@ -431,7 +410,6 @@ form {
     width: 200%;
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
-    border-radius: 10px;
 }
 
 .overlay {
@@ -488,6 +466,13 @@ form {
     color: #FFF;
     font-size: 35px;
 }
+
+.angry-grid{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
 
 
 /* FOOTER */
@@ -639,11 +624,16 @@ a,
     text-align: center;
 }
 
-
 #imagem-responsivo-formulario {
-    background-image: url(../img/background/formulario-responsivo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url(../img/background/formulario-responsivo.png) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 5vh;
 }
 
 /* DESKTOP */
@@ -815,23 +805,16 @@ a,
         display: none;
     }
 
-    #item-0 img {
+    /* #item-0 img {
         width: 380px;
         height: 300px;
         margin-top: 20px;
         margin-left: 50px;
-    }
-
-    #imagem-responsivo-formulario img {
-        width: 380px;
-        height: 300px;
-        margin-top: 10px;
-        margin-left: 50px;
-    }
+    } */
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 319px) and (max-width: 480px) {
     .formulario {
         display: none;
     }
