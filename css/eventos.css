@@ -217,7 +217,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     margin: -20px 0 50px;
 }
 
@@ -247,6 +247,10 @@ h2 {
     text-align: center;
 }
 
+.form-title{
+    text-align: center;
+}
+
 .texto {
     font-weight: 100;
     line-height: 20px;
@@ -255,9 +259,10 @@ h2 {
 }
 
 #esqueceu {
-    color: #000000;
+    color: #fff;
     text-decoration: none;
-    margin: 15px 0;
+    margin-top: 15px;
+    font-size: 25px;
 }
 
 #name,
@@ -275,6 +280,7 @@ h2 {
     font-size: 25px;
     font-weight: bold;
     color: #fff;
+    margin-top: 2rem;
 }
 
 input {
@@ -292,6 +298,8 @@ button {
     text-transform: uppercase;
     transition: transform 80ms ease-in;
     border-color: red;
+    align-self: center;
+    margin-top: 1rem;
 }
 
 button:active {
@@ -462,18 +470,14 @@ form {
     transform: translateX(20%);
 }
 
-#esqueceu {
-    color: #FFF;
-    font-size: 35px;
-}
-
-.angry-grid{
+.angry-grid {
     max-width: 80%;
     margin: 0 auto;
 }
 
-
-
+.form-label {
+    text-align: center;
+}
 
 /* FOOTER */
 footer {
@@ -620,8 +624,14 @@ a,
 .copyright-title,
 .copyright-text {
     color: var(--clr-font);
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
     text-align: center;
+}
+
+.follow-us-title,
+.footer-left-title {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: bold;
 }
 
 #imagem-responsivo-formulario {
