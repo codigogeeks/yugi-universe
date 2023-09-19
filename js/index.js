@@ -1,6 +1,6 @@
 // botao
 
-function Evento(){
+function Evento() {
     alert('E-mail enviado com sucesso');
 }
 
@@ -141,27 +141,3 @@ carrosel.setControls();
 carrosel.setNav();
 carrosel.setInitialState();
 carrosel.useControls();
-
-var touchend = 0
-var touchstart = 0
-var left =  '<button class="carrossel-controls-<">&gt;</button>'
-
-
-var stripedHtml = $.parseHTML(left);
-
-$(".teste").on("touchend", function(event) {
-    touchend = event.changedTouches[0].clientX;
-    $.fn.handleGesture();
-})
-
-$(".teste").on("touchstart", function(event) {
-    touchstart = event.changedTouches[0].clientX;
-    $.fn.handleGesture();
-})
-
-$(document).ready(function() {
-    $.fn.handleGesture = function() {
-        if(touchstart > touchend) carrosel.useControls(stripedHtml)
-        if(touchstart < touchend) console.log('right')
-    }
-});

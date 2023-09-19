@@ -26,13 +26,23 @@ body {
 
 /* HEADER */
 header {
+    position: fixed;
+    width: 80%;
     max-width: 80%;
     height: 70px;
     background-color: var(--clr-header);
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0 auto;
-    margin-top: 30px;
+    top: 0;
+    left: 10%;
+    z-index: 1000000;
+    transition: all 1s ease-in-out;
+}
+
+header.scrolled {
+    background-color: transparent;
 }
 
 .caixa-esquerda,
@@ -41,31 +51,31 @@ header {
     height: 70px;
 }
 
-.caixa-esquerda {
-    display: flex;
-    justify-content: center;
-}
-
 #logo {
     display: block;
-    width: min(20rem, 80%);
+    width: clamp(13rem, 16vw, 30rem);
+    position: fixed;
+    z-index: 1000000;
+    padding-left: 1rem;
 }
 
 #logo img {
-    width: 100%;
     height: 91px;
+    width: 90%;
 }
 
-#menu {
+.caixa-direita {
     display: flex;
     align-items: center;
+    height: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 1;
+    transition: all .3s ease-in-out;
 }
 
 #menu li,
-.anchor-header {
+a {
     text-decoration: none;
     color: var(--clr-font);
     font-size: 32px;
@@ -78,23 +88,51 @@ header {
     transition: all 0.5s;
 }
 
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+}
+
+
+main {
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+
 /* EVENTOS */
 .header {
     max-width: 80%;
-    height: 542px;
+    height: 50vh;
     background-image: url(../img/background/background-space.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagem-nos {
     max-width: 80%;
-    height: 510px;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 25px;
+    height: 80%;
+}
+
+.imagem-nos img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -477,7 +515,7 @@ form {
 
 /* FOOTER */
 footer {
-    margin: 0 auto 10vh auto;
+    margin: 5vh auto 10vh auto;
     max-width: 80%;
     background: url(../img/background/background-space.jpg) center center no-repeat;
     background-size: cover;
@@ -630,6 +668,10 @@ a,
     font-weight: bold;
 }
 
+.copyright-text{
+    padding: 0;
+}
+
 #imagem-responsivo-formulario {
     background: url(../img/background/formulario-responsivo.png) center center no-repeat;
     background-size: cover;
@@ -638,7 +680,6 @@ a,
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     margin-top: 5vh;
 }
 
@@ -651,16 +692,6 @@ a,
     .angry-grid {
         display: none;
     }
-
-    .imagem-nos img {
-        width: 90vh;
-        height: 600px;
-        margin-top: 50px;
-    }
-
-    .header {
-        height: 800px;
-    }
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -672,12 +703,7 @@ a,
         display: none;
     }
 
-    .imagem-nos img {
-        width: 100vh;
-        height: 400px;
-        margin-top: 40px;
-    }
-
+    
     .header {
         height: 500px;
     }
@@ -695,12 +721,6 @@ a,
 
     .angry-grid {
         display: none;
-    }
-
-    .imagem-nos img {
-        width: 100vh;
-        height: 280px;
-        margin-top: 40px;
     }
 
     .header {
@@ -723,12 +743,6 @@ a,
 
     .angry-grid {
         display: none;
-    }
-
-    .imagem-nos img {
-        width: 250vh;
-        height: 280px;
-        margin-top: 40px;
     }
 
     .header {
@@ -789,24 +803,6 @@ a,
         display: block;
     }
 
-    #imagem-responsivo-formulario img {
-        width: 260px;
-        height: 400px;
-        margin: 5px 0px 0px 30px;
-    }
-
-    #item-0 img {
-        width: 260px;
-        height: 200px;
-        margin: 20px 0px 0px 30px;
-    }
-
-    .imagem-nos img {
-        width: 200px;
-        height: 200px;
-        margin-top: 40px;
-    }
-
     .header {
         height: 280px;
     }
@@ -851,4 +847,46 @@ a,
         height: 100%;
         justify-content: space-around;
     }
+}
+
+/* HEADER NÃO MEXER */
+@media only screen and (max-width: 1199px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .caixa-direita {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        margin-right: 1rem;
+        float: right;
+    }
+
+    .caixa-direita.show-menu {
+        position: fixed;
+        top: 70px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 25vh;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        padding-right: 1rem;
+        background-color: var(--clr-header);
+        z-index: 999;
+    }
+
+    .caixa-direita.scrolled {
+        background-color: transparent;
+    }
+
+    main.main-down {
+        padding-top: calc(70px + 25vh);
+    }
+
 }

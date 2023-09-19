@@ -23,18 +23,8 @@ body {
     font-family: yugioh;
 }
 
-
-header {
-    max-width: 80%;
-    height: 70px;
-    background-color: var(--clr-header);
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-h1, p {
+h1,
+p {
     color: var(--clr-font);
 }
 
@@ -48,8 +38,29 @@ h1 {
 }
 
 p {
-    font-size: clamp(1rem, 2vw, 2rem);;
+    font-size: clamp(1rem, 2vw, 2rem);
+    ;
     padding: 20px;
+}
+
+header {
+    position: fixed;
+    width: 80%;
+    max-width: 80%;
+    height: 70px;
+    background-color: var(--clr-header);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    top: 0;
+    left: 10%;
+    z-index: 1000000;
+    transition: all 1s ease-in-out;
+}
+
+header.scrolled {
+    background-color: transparent;
 }
 
 .caixa-esquerda,
@@ -58,27 +69,27 @@ p {
     height: 70px;
 }
 
-.caixa-esquerda {
-    display: flex;
-    justify-content: center;
-}
-
 #logo {
     display: block;
-    width: min(20rem, 80%);
+    width: clamp(13rem, 16vw, 30rem);
+    position: fixed;
+    z-index: 1000000;
+    padding-left: 1rem;
 }
 
 #logo img {
-    width: 100%;
     height: 91px;
+    width: 90%;
 }
 
-#menu {
+.caixa-direita {
     display: flex;
     align-items: center;
+    height: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 1;
+    transition: all .3s ease-in-out;
 }
 
 #menu li,
@@ -95,6 +106,29 @@ a {
     transition: all 0.5s;
 }
 
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+}
+
+
+main {
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
 /* Ajustes da Imagem de fundo da tela*/
 .tela-principal {
     max-width: 80%;
@@ -105,7 +139,7 @@ a {
     margin: 0 auto;
 }
 
-.overlay{
+.overlay {
     width: 100%;
     height: 542px;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
@@ -117,18 +151,18 @@ a {
 /* div responsável por ter a imagem do personagem*/
 #personagem-tela-principal {
     width: 45%;
-    height: 542px;   
+    height: 542px;
     margin: auto;
- }
+}
 
 /* Ajuste do personagem a div que está dentro */
-#personagem-tela-principal img{
+#personagem-tela-principal img {
     width: 100%;
     height: 100%;
     margin: auto;
- }
+}
 
- /* Div responsável pelo posicionamento da Logo */
+/* Div responsável pelo posicionamento da Logo */
 #descricaoSerie {
     width: 45%;
     height: 542px;
@@ -189,7 +223,7 @@ a {
     border-radius: 50%;
 }
 
-.caixa1 span:first-of-type{
+.caixa1 span:first-of-type {
     position: absolute;
     top: 0;
     left: 0;
@@ -201,16 +235,17 @@ a {
 }
 
 /* Essa parte faz a animação da ciaxa que fara uma descrição dos personagens*/
-@keyframes animar1{
-    0%{
+@keyframes animar1 {
+    0% {
         transform: translateX(-100%);
     }
-    100%{
+
+    100% {
         transform: translateX(100%);
     }
 }
 
-.caixa1 span:nth-of-type(2){
+.caixa1 span:nth-of-type(2) {
     position: absolute;
     top: 0;
     right: 0;
@@ -220,16 +255,17 @@ a {
     animation: animar2 2s linear infinite;
 }
 
-@keyframes animar2{
-    0%{
+@keyframes animar2 {
+    0% {
         transform: translateY(-100%);
     }
-    100%{
+
+    100% {
         transform: translateY(100%);
     }
 }
 
-.caixa1 span:nth-of-type(3){
+.caixa1 span:nth-of-type(3) {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -240,17 +276,18 @@ a {
     animation-delay: 1s;
 }
 
-@keyframes animar3{
-    0%{
+@keyframes animar3 {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-100%);
     }
 }
 
 
-.caixa1 span:last-of-type{
+.caixa1 span:last-of-type {
     position: absolute;
     top: 0;
     left: 0;
@@ -260,25 +297,26 @@ a {
     animation: animar4 2s linear infinite;
 }
 
-@keyframes animar4{
-    0%{
+@keyframes animar4 {
+    0% {
         transform: translateY(100%);
     }
-    100%{
+
+    100% {
         transform: translateY(-100%);
     }
 }
 
 .descricao-personagens {
 
-    
+
     padding: .5rem;
 }
 
 
 /* FOOTER */
 footer {
-    margin: 0 auto 10vh auto;
+    margin: 5vh auto 10vh auto;
     max-width: 80%;
     background: url(../img/background/background-space.jpg) center center no-repeat;
     background-size: cover;
@@ -431,88 +469,94 @@ a,
     font-weight: bold;
 }
 
+.copyright-text {
+    padding: 0;
+}
+
 
 /* TABLET */
 @media only screen and (max-width: 767px) {
-    .fundo{
+    .fundo {
         flex-direction: column;
     }
 
-    .entrar{
+    .entrar {
         width: 120px;
         margin-left: 25px;
     }
-    
-    .imagem-nos{
+
+    .imagem-nos {
         width: 300vh;
         height: 280px;
         margin-top: 60px;
         margin-left: 30px;
     }
 
-    .header{
+    .header {
         height: 400px;
     }
 
-    .formulario{
+    .formulario {
         display: none;
     }
 
 
-}/* Responsividade dos conteudos*/
+}
 
-@media (min-width: 320px) and (max-width: 480px){
-    
+/* Responsividade dos conteudos*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
     .tela-principal {
         width: 80%;
         height: 37vh;
     }
-    
-    .overlay{
+
+    .overlay {
         width: 100%;
         height: 37vh;
-    
+
         display: flex;
         flex-direction: column;
     }
-    
+
     /* div responsável por ter a imagem do personagem*/
     #personagem-tela-principal {
-       width: 50%;
-       height: 33vh;
-       margin-bottom: 0;
+        width: 50%;
+        height: 33vh;
+        margin-bottom: 0;
     }
-    
+
     /* Ajuste do personagem a div que está dentro */
-    #personagem-tela-principal img{
+    #personagem-tela-principal img {
         width: 100%;
         height: 100%;
     }
-    
+
     #descricaoSerie {
         display: none;
     }
-    
-    
+
+
     .containerFormatacao {
         min-width: 80%;
-    
+
         margin: 100px auto;
-    
+
         background-color: var(--clr-second-bg);
         border-radius: 50px 0 50px 0;
-    
+
         display: flex;
         flex-direction: column;
         align-items: center;
 
         padding: 5px;
-    
+
         box-shadow: 0px 10px 100px #3B488F;
     }
-    
-    .descricao-personagens h1{
-      padding: 5px;
+
+    .descricao-personagens h1 {
+        padding: 5px;
     }
 
     .caixa {
@@ -523,7 +567,7 @@ a,
         align-items: center;
         justify-content: center;
     }
-    
+
     .caixa1 {
         position: relative;
         width: 95%;
@@ -534,7 +578,7 @@ a,
         margin-bottom: 10px;
     }
 
-  
+
     .caixa img {
         width: 75%;
         height: auto;
@@ -546,33 +590,33 @@ a,
 }
 
 /* Tablets */
-@media (min-width: 481px) and (max-width: 800px){
+@media (min-width: 481px) and (max-width: 800px) {
 
     .tela-principal {
         width: 80%;
         height: 50vh;
     }
-    
-    .overlay{
+
+    .overlay {
         width: 100%;
         height: 50vh;
-    
+
     }
-    
+
     /* div responsável por ter a imagem do personagem*/
     #personagem-tela-principal {
-       width: 50%;
-       height: 45vh;
-       margin-bottom: 0;
+        width: 50%;
+        height: 45vh;
+        margin-bottom: 0;
     }
-    
+
     /* Ajuste do personagem a div que está dentro */
-    #personagem-tela-principal img{
+    #personagem-tela-principal img {
         width: 95%;
         height: 100%;
     }
 
-    .containerFormatacao{
+    .containerFormatacao {
         display: flex;
         flex-direction: column;
     }
@@ -582,62 +626,106 @@ a,
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         padding: 10px;
     }
-    
+
     #descricaoSerie img {
         width: 100%;
     }
 
-    
-    .caixa, .caixa1 {
+
+    .caixa,
+    .caixa1 {
         width: 95%;
         height: auto;
     }
 
     p {
-        font-size: clamp(1.5rem, 3.2vw, 2rem);;
+        font-size: clamp(1.5rem, 3.2vw, 2rem);
+        ;
         padding: 20px;
     }
 }
 
 
 /* FOOTER NÃO MEXER */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
     .footer-content {
         flex-direction: column;
         margin-top: 30px;
     }
-  
+
     .footer-left-container {
         height: auto;
         padding: 1rem;
     }
-  
+
     .footer-left-container,
     .footer-middle-container,
     .footer-right-container {
         width: 100%;
     }
-  
+
     .footer-left-image {
         margin-top: 1rem;
     }
-  
+
     .footer-right-content-container,
     .footer-list,
     .footer-left-title-container {
         padding: 0;
     }
-  
+
     .footer-right-container {
         height: auto;
         padding-top: 1rem;
     }
-  
+
     .footer-right-content-container {
         height: 100%;
         justify-content: space-around;
     }
-  }
+}
+
+/* HEADER NÃO MEXER */
+@media only screen and (max-width: 1199px) {
+
+    header {
+        justify-content: space-between;
+    }
+
+    .caixa-direita {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        margin-right: 1rem;
+        float: right;
+    }
+
+    .caixa-direita.show-menu {
+        position: fixed;
+        top: 70px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 25vh;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        padding-right: 1rem;
+        background-color: var(--clr-header);
+        z-index: 999;
+    }
+
+    .caixa-direita.scrolled {
+        background-color: transparent;
+    }
+
+    main.main-down {
+        padding-top: calc(70px + 25vh);
+    }
+
+}
