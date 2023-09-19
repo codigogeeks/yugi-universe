@@ -117,13 +117,12 @@ header {
     align-items: center;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 2em;
+    padding: 2rem 0;
 }
 
 .card {
-    width: min(20vw, 30%);
-    ;
-    height: max(30vw, 30vh);
+    width: calc(33vw/1.5);
+    height: 33vw;
     perspective: 1000px;
 }
 
@@ -222,7 +221,7 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     font-weight: bold;
     margin: 0;
     color: #fff;
@@ -230,12 +229,12 @@ h1 {
 }
 
 .bem-vindo {
-    font-size: 50px;
+    font-size: clamp(1.5rem, 3vw, 3rem);
     color: #fff;
 }
 
 .texto {
-    font-size: 25px;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);  
     color: #fff;
 }
 
@@ -249,11 +248,11 @@ h2 {
 
 .form-title{
     text-align: center;
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
 
 .texto {
     font-weight: 100;
-    line-height: 20px;
     letter-spacing: 0.5px;
     margin: 20px 0 30px;
 }
@@ -262,7 +261,7 @@ h2 {
     color: #fff;
     text-decoration: none;
     margin-top: 15px;
-    font-size: 25px;
+    font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
 
 #name,
@@ -277,14 +276,15 @@ h2 {
 }
 
 .form-label {
-    font-size: 25px;
+    font-size: clamp(1.5rem, 2.8vw, 3rem);
     font-weight: bold;
     color: #fff;
-    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: .5rem
 }
 
 input {
-    padding: 12px 15px;
+    padding: .5rem  ;
     margin: 8px 0;
 }
 
@@ -475,10 +475,6 @@ form {
     margin: 0 auto;
 }
 
-.form-label {
-    text-align: center;
-}
-
 /* FOOTER */
 footer {
     margin: 0 auto 10vh auto;
@@ -586,7 +582,7 @@ a,
 .list-names,
 .footer-left-title,
 .follow-us-title {
-    font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+    font-size: clamp(1.2rem, 1.8vw, 2.5rem);
 }
 
 .icon-link i {
@@ -630,7 +626,7 @@ a,
 
 .follow-us-title,
 .footer-left-title {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(1.4rem, 2.5vw, 2.5rem);
     font-weight: bold;
 }
 
@@ -756,10 +752,10 @@ a,
     .angry-grid {
         display: block;
     }
-
+/* 
     .fundo {
         flex-direction: column;
-    }
+    } */
 
     .footer-content {
         flex-direction: column;
@@ -863,9 +859,9 @@ a,
         height: 280px;
     }
 
-    .fundo {
+    /* .fundo {
         flex-direction: column;
-    }
+    } */
 
     .footer-content {
         flex-direction: column;
