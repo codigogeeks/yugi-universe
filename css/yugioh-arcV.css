@@ -177,7 +177,7 @@ a {
 .caixa1 {
     position: relative;
     width: 50%;
-    min-height: 65vh;
+    height: 65vh;
     margin: 10px;
     display: flex;
     /*justify-content: center;
@@ -545,6 +545,7 @@ a,
 
 }
 
+/* MENU HAMBURGUER DA GABS
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -584,3 +585,15 @@ a,
         display: block;
     }
 }
+*/
+
+/* Responsividade dos conteudos*/
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px){
+    
+
+}
+
+/* */
+@media (min-width: 320px) and (max-width: 480px){}
