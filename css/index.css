@@ -829,6 +829,10 @@ a,
         #email {
             width: auto;
         }
+
+        .flutuante, .flutuante2, .flutuante3{
+            display: none;
+        }
     }
 }
 
