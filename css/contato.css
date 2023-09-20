@@ -200,17 +200,7 @@ main {
   transform: scale(1.15);
 }
 
-
-@media screen and (min-width: 768px) {
-  section {
-    padding: 1em 7em;
-  }
-}
-
 @media screen and (min-width: 992px) {
-  section {
-    padding: 1em;
-  }
 
   .card {
     padding: 3em 1em;
@@ -454,40 +444,40 @@ a,
 @media only screen and (max-width: 1199px) {
 
   header {
-      justify-content: space-between;
+    justify-content: space-between;
   }
 
   .caixa-direita {
-      display: none;
+    display: none;
   }
 
   .hamburger-icon {
-      display: flex;
-      margin-right: 1rem;
-      float: right;
+    display: flex;
+    margin-right: 1rem;
+    float: right;
   }
 
   .caixa-direita.show-menu {
-      position: fixed;
-      top: 70px;
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      max-height: 25vh;
-      align-items: flex-end;
-      justify-content: space-evenly;
-      padding-right: 1rem;
-      background-color: var(--clr-header);
-      z-index: 999;
+    position: fixed;
+    top: 70px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 25vh;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding-right: 1rem;
+    background-color: var(--clr-header);
+    z-index: 999;
   }
 
   .caixa-direita.scrolled {
-      background-color: transparent;
+    background-color: transparent;
   }
 
   main.main-down {
-      padding-top: calc(70px + 25vh);
+    padding-top: calc(70px + 25vh);
   }
 
 }
